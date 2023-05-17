@@ -100,7 +100,7 @@ a.site-header-title-link:hover {
 
 .response-options a {
   padding: 6px 8px 4px 8px;
-  color: var(--body-text-color);
+  color: var(--card-text-color);
   border: 1px solid var(--shadow-color);
   font-size: 0.8rem;
   margin: 5px;
