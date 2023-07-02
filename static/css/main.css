@@ -98,7 +98,7 @@ a.site-header-title-link:hover {
   justify-content: center;
 }
 
-.response-options a {
+.response-options a, .tinylytics_kudos {
   padding: 6px 8px 4px 8px;
   color: var(--card-text-color);
   border: 1px solid var(--shadow-color);
