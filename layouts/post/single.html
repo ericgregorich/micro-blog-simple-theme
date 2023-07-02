@@ -63,7 +63,7 @@
 {{ if eq .Type "post"}}
     {{ if or (templates.Exists "partials/reply-by-email.html") (templates.Exists "partials/conversation-link.html") (.Site.Params.showTinylyticsKudos) }}
 		<div class="response-options">
-			{{ if .Site.Params.showTinylyticsKudos}}<button class="tinylytics_kudos" type="button">Kudos</button>{{ end }}
+			{{ if .Site.Params.showTinylyticsKudos}}<button class="tinylytics_kudos" type="button"></button>{{ end }}
 			{{ if templates.Exists "partials/conversation-link.html" }}{{ partial "conversation-link.html" . }}{{ end }}
 			{{ if templates.Exists "partials/reply-by-email.html" }}{{ partial "reply-by-email.html" . }}{{ end }}
 		</div>
