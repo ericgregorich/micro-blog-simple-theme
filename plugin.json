@@ -19,6 +19,11 @@
       "type": "boolean"
     },
     {
+      "field": "params.showTinylyticsKudos",
+      "label": "Using Tinylytics? Show Kudos?",
+      "type": "boolean"
+    },
+    {
       "field": "params.light_body_background_color",
       "label": "(Light) Body Background",
       "type": "color"
