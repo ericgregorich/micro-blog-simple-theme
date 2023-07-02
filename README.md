@@ -9,6 +9,7 @@ Cards is a simple and lightweight theme for Micro.blog.
 - A toggle to allow visitors to toggle between light and dark mode.
 - An option to enable Reading Time on posts greater than 1 minute long.
 - An option to truncate posts on the home and category pages.
+- An option to show Tinylytics Kudos below your
 - Shows the post categories as links on the post page.
 
 !["Card Theme Samples"](https://raw.githubusercontent.com/ericgregorich/micro-blog-cards-theme/master/screenshot.png)
@@ -21,6 +22,7 @@ Email me from this [form](https://ericgregorich.com/email/) if you have any issu
 
 ## Change Log
 
+- 2023-07-02 v1.2.0 Added support for Tinylytics Kudos.
 - 2023-01-07 v1.1.9 Added setting to hide categories on the post.
 - 2023-01-02 v1.1.8 Updated the style of categories on the post pages.
 - 2023-01-01 v1.1.7 Fixed an issue where all posts were showing on category lists.
@@ -46,7 +48,7 @@ You can customize the colors in the Cards theme from your Plugin Settings screen
 
 The name of each setting should be self-explanatory. The Body colors affect the content outside the “cards,” and the Card colors affect the “cards” themselves.
 
-> The colors may be overwritten when a new update to the theme is published. This is a known bug in Micro.blog that will hopefully be fixed soon. To avoid this, you can copy the content in the config.json file, update the theme, then paste the values back into the config.json file.
+> The colors may be overwritten when a new update to the theme is published. To avoid this, you can copy the content in the config.json file, update the theme, then paste the values back into the config.json file.
 
 - Click on Design, then Custom Themes.
 - Click on the config.json file in the Templates for Cards section.
@@ -62,3 +64,11 @@ The name of each setting should be self-explanatory. The Body colors affect the 
 The easiest (and safest) way to customize this theme is to create a new blank theme while the Cards theme is installed. You can customize the template files in your blank theme without changing this Cards theme.
 
 When updates are pushed out to the Cards theme, the theme files will be updated automatically. Any custom theme files you have in your custom theme will be untouched.
+
+## Tinylytics Kudos
+[Tinylytics](https://tinylytics.app) is a lightweight, privacy focused analytics service created by @vincent. If you use Tinylyics on your Micro.blog site then you can easily enable the Kudos functionalty using the following steps.
+1. Setup a Tinylytics account.
+2. To configure Tinylytics on your Micro.blog site, I recommend the [Tinylytics for Micro.blog](https://micro.blog/account/plugins/view/101) plugin by @jimmitchell. It has everything you need to add Tinytics to your site. 
+3. Open your Cards theme configuraiton and check the box labeled `Enable Tinylytics Kudos?`.
+4. Your Kudos should then appear below your post.
+

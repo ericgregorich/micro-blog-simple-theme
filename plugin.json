@@ -1,5 +1,5 @@
 {
-  "version": "1.2.0",
+  "version": "1.2.1",
   "title": "Cards Theme",
   "description": "A simple and customizable Micro.blog theme.",
   "fields": [
@@ -20,7 +20,7 @@
     },
     {
       "field": "params.showTinylyticsKudos",
-      "label": "Using Tinylytics? Show Kudos?",
+      "label": "Enable Tinylytics Kudos?",
       "type": "boolean"
     },
     {

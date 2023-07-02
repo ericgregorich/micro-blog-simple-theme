@@ -27,6 +27,7 @@
     "usedarktheme": true,
     "showReadingTime": true,
     "showFullPost": false,
-    "showPostCategories": true
+    "showPostCategories": true,
+    "showTinylyticsKudos": false
   }
 }
