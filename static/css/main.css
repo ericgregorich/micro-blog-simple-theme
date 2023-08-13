@@ -328,6 +328,14 @@ input[type='q'], textarea[name='message'] {
   padding: 10px;
 }
 
+input[id='q'],
+input[id='input_search'],
+input[type='search'],
+input[type='q'], textarea[name='message'] {
+  width: 45%;
+  display: inherit;
+}
+
 textarea[name='message'] {
   height: 200px;
 }
