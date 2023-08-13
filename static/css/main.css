@@ -261,20 +261,12 @@ blockquote {
 }
 
 /** Code */
-code {
-  white-space: pre-wrap !important;
-  overflow-wrap: break-word;
-}
-
 pre {
-  background-color: black;
-  color: white;
+  background-color: #333333;
+  color: #F9F9F9;
   white-space: pre-wrap;
-}
-
-.highlight pre {
-  padding: 10px;
-  font-size: var(--font-size-small);
+	padding: 15px;
+	font-size: var(--font-size-small);
 }
 
 /** Categories */
