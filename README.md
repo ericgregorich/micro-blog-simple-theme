@@ -22,6 +22,7 @@ Email me from this [form](https://ericgregorich.com/email/) if you have any issu
 
 ## Change Log
 
+- 2023-08-13 v1.2.2 Tweaked the default stying for code blocks.
 - 2023-07-02 v1.2.1 Added support for Tinylytics Kudos.
 - 2023-01-07 v1.1.9 Added setting to hide categories on the post.
 - 2023-01-02 v1.1.8 Updated the style of categories on the post pages.
