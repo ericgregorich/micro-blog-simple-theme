@@ -98,7 +98,8 @@ a.site-header-title-link:hover {
   justify-content: center;
 }
 
-.response-options a, .response-options .tinylytics_kudos {
+.response-options a,
+.response-options .tinylytics_kudos {
   padding: 6px 8px 4px 8px;
   color: var(--card-text-color);
   border: 1px solid var(--shadow-color);
@@ -108,7 +109,8 @@ a.site-header-title-link:hover {
   background-color: var(--card-background-color);
 }
 
-.response-options a:hover, .response-options button.tinylytics_kudos:hover{
+.response-options a:hover,
+.response-options button.tinylytics_kudos:hover {
   color: var(--body-accent-color);
 }
 
@@ -159,7 +161,7 @@ a.site-nav-link:visited {
 }
 
 a.site-nav-link:hover {
-  color: var(--body-accent-color);
+  color: var(--hover-color);
 }
 
 /** Content */
@@ -264,10 +266,10 @@ blockquote {
 /** Code */
 pre {
   background-color: #333333;
-  color: #F9F9F9;
+  color: #f9f9f9;
   white-space: pre-wrap;
-	padding: 15px;
-	font-size: var(--font-size-small);
+  padding: 15px;
+  font-size: var(--font-size-small);
 }
 
 /** Categories */
@@ -282,10 +284,10 @@ div.archive_categories p {
 }
 
 div.archive_categories p a {
-  color: var(--card-accent-color);
+  color: var(--body-text-color);
   margin-right: 5px;
   background-color: var(--card-background-color);
-  border: 1px solid var(--body-accent-color);
+  border: 1px solid var(--shadow-color);
   box-shadow: 2px 2px 4px var(--shadow-color);
   font-size: 0.9rem;
   border-radius: 2px;
@@ -298,7 +300,9 @@ div.archive_categories span {
 }
 
 div.archive_categories p a:hover {
-  color: var(--hover-color);
+  color: white;
+  background-color: var(--hover-color);
+  border: 1px solid var(--body-text-color);
 }
 
 /** Photos */
