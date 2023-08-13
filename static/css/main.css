@@ -148,13 +148,14 @@ a.site-header-title-link {
   min-width: var(--width-min);
   margin: auto;
   text-align: center;
+  height: 45px;
 }
 
 a.site-nav-link,
 a.site-nav-link:visited {
   font-size: var(--font-size-small);
-  color: var(--body-text-color);
-  text-decoration: underline;
+  color: var(--body-accent-color);
+  text-decoration: none;
 }
 
 a.site-nav-link:hover {
@@ -277,7 +278,7 @@ div.archive_categories {
 }
 
 div.archive_categories p {
-  margin-right: 5px;
+  margin: 5px;
 }
 
 div.archive_categories p a {

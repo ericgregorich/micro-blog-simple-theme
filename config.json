@@ -28,6 +28,7 @@
     "showReadingTime": true,
     "showFullPost": false,
     "showPostCategories": true,
-    "showTinylyticsKudos": false
+    "showTinylyticsKudos": false,
+    "showTagsHome": false
   }
 }
