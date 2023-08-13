@@ -269,6 +269,9 @@ code {
 .highlight pre {
   padding: 10px;
   font-size: var(--font-size-small);
+  overflow-wrap: wrap;
+  background-color: black;
+  white-space: pre-wrap;
 }
 
 /** Categories */
