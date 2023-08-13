@@ -333,11 +333,12 @@ input[id='input_search'],
 input[type='search'],
 input[type='q'], textarea[name='message'] {
   width: 45%;
-  display: inherit;
+  display: inline;
 }
 
 textarea[name='message'] {
   height: 200px;
+  width: 98%;
 }
 
 form input[type='submit'],
