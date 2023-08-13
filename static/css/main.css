@@ -311,12 +311,8 @@ div.archive_categories p a:hover {
 }
 
 /** Form fields */
-input[id='q'],
-input[id='input_search'],
 input[type='email'],
-input[type='text'],
-input[type='search'],
-input[type='q'], textarea[name='message'] {
+input[type='text'] {
   box-sizing: border-box;
   border: 1px solid var(--shadow-color);
   border-radius: 10px;
@@ -331,14 +327,28 @@ input[type='q'], textarea[name='message'] {
 input[id='q'],
 input[id='input_search'],
 input[type='search'],
-input[type='q'], textarea[name='message'] {
+input[type='q'] {
+  box-sizing: border-box;
+  border: 1px solid var(--shadow-color);
+  border-radius: 10px;
   width: 45%;
+  height: 35px;
+  font-size: var(--font-size-normal);
   display: inline;
+  margin: 10px;
+  padding: 10px;
 }
 
 textarea[name='message'] {
-  height: 200px;
+  box-sizing: border-box;
+  border: 1px solid var(--shadow-color);
+  border-radius: 10px;
   width: 98%;
+  height: 200px;
+  font-size: var(--font-size-normal);
+  display: block;
+  margin: 10px;
+  padding: 10px;
 }
 
 form input[type='submit'],
