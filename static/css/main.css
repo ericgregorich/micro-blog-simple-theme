@@ -316,15 +316,16 @@ input[id='input_search'],
 input[type='email'],
 input[type='text'],
 input[type='search'],
-input[type='q'] textarea[name='message'] {
-  padding: 12px 20px;
-  margin: 8px 8px 0;
+input[type='q'], textarea[name='message'] {
   box-sizing: border-box;
   border: 1px solid var(--shadow-color);
   border-radius: 10px;
-  width: 375px;
-  height: 35px;
+  width: 98%;
+  height: 235px;
   font-size: var(--font-size-normal);
+  display: block;
+  margin: 10px;
+  padding: 10px;
 }
 
 form input[type='submit'],
