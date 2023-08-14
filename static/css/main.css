@@ -267,7 +267,7 @@ blockquote {
 pre {
   background-color: #333333;
   color: #f9f9f9;
-  white-space: pre-wrap;
+  overflow: auto;
   padding: 15px;
   font-size: var(--font-size-small);
 }
