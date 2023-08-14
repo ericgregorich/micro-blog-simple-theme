@@ -22,6 +22,7 @@ Email me from this [form](https://ericgregorich.com/email/) if you have any issu
 
 ## Change Log
 
+- 2023-08-14 v1.3.1 Minor bug fixes with code blocks.
 - 2023-08-13 v1.3.0 Option to add tags to home page. Fixed stying issues.
 - 2023-08-13 v1.2.2 Tweaked the default stying for code blocks.
 - 2023-07-02 v1.2.1 Added support for Tinylytics Kudos.
