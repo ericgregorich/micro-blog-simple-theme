@@ -2,7 +2,7 @@
 <div class="post-list-title"><h1>{{ .Title }}</h1></div>
 <div class="home h-feed">
   <ul class="post-list">
-	{{ $paginator := .Paginate (where .Pages.ByDate.Reverse "Type" "posts") (index .Site.Params.paginate | default 25) }}
+	{{ $paginator := .Paginate (where .Pages.ByDate.Reverse "Type" "post") (index .Site.Params "archive-paginate" | default 25) }}
 	{{ range $paginator.Pages  }}
 	{{ if .Title }}
 	{{ if .Site.Params.showFullPost }}
