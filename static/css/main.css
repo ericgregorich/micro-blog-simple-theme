@@ -150,7 +150,7 @@ a.site-header-title-link {
   min-width: var(--width-min);
   margin: auto;
   text-align: center;
-  height: 45px;
+  margin-bottom: 10px;
 }
 
 a.site-nav-link,
@@ -314,11 +314,9 @@ input[type='email'],
 input[type='text'] {
   box-sizing: border-box;
   border: 1px solid var(--shadow-color);
-  border-radius: 10px;
-  width: 98%;
+  border-radius: 5px;
   height: 35px;
   font-size: var(--font-size-normal);
-  display: block;
   margin: 10px;
   padding: 10px;
 }
@@ -329,8 +327,7 @@ input[type='search'],
 input[type='q'] {
   box-sizing: border-box;
   border: 1px solid var(--shadow-color);
-  border-radius: 10px;
-  width: 45%;
+  border-radius: 5px;
   height: 35px;
   font-size: var(--font-size-normal);
   display: inline;
@@ -341,11 +338,9 @@ input[type='q'] {
 textarea[name='message'] {
   box-sizing: border-box;
   border: 1px solid var(--shadow-color);
-  border-radius: 10px;
-  width: 98%;
+  border-radius: 5px;
   height: 200px;
   font-size: var(--font-size-normal);
-  display: block;
   margin: 10px;
   padding: 10px;
 }
@@ -355,7 +350,7 @@ form button {
   background-color: var(--body-accent-color);
   border: 0;
   padding: 8px;
-  border-radius: 8px;
+  border-radius: 5px;
   color: white;
   min-width: 100px;
   height: 35px;

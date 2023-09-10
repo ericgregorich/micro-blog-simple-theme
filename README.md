@@ -22,6 +22,7 @@ Email me from this [form](https://ericgregorich.com/email/) if you have any issu
 
 ## Change Log
 
+- 2023-09-10 v1.3.7 Minor CSS tweaks to nav and form controls.
 - 2023-09-10 v1.3.6 Added setting to set the number of posts per page (pagination).
 - 2023-09-10 v1.3.5 Updated to support Hugo 0.117. Tweaked the card shadows.
 - 2023-08-14 v1.3.1 Minor bug fixes with code blocks.
