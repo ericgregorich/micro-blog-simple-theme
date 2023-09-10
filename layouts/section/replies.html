@@ -3,7 +3,8 @@
 
   <ul class="post-list">
 	{{ if .Site.Params.paginate_replies }}
-		{{ $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Type" "reply") }}
+	{{ $paginator := .Paginate (where .Site.Pages.ByDate.Reverse "Type" "reply") (index .Site.Params.paginate |
+    default 25) }}
 		{{ $list := $paginator.Pages }}
 		{{ range $list  }}
 		  <li class="post-list-item">
