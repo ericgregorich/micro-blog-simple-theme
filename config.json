@@ -29,6 +29,7 @@
     "showFullPost": false,
     "showPostCategories": true,
     "showTinylyticsKudos": false,
-    "showTagsHome": false
+    "showTagsHome": false,
+    "paginate": 20
   }
 }

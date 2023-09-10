@@ -29,6 +29,11 @@
       "type": "boolean"
     },
     {
+      "field": "params.paginate",
+      "label": "Number of posts per page",
+      "type": "integer"
+    },
+    {
       "field": "params.light_body_background_color",
       "label": "(Light) Body Background",
       "type": "color"
