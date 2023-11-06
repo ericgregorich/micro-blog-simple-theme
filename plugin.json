@@ -20,7 +20,7 @@
     },
     {
       "field": "params.showTagsHome",
-      "label": "Show Categories?",
+      "label": "Show Categories in Navigation?",
       "type": "boolean"
     },
     {
