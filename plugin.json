@@ -20,7 +20,7 @@
     },
     {
       "field": "params.showTagsHome",
-      "label": "Show Tags on Home?",
+      "label": "Show Categories?",
       "type": "boolean"
     },
     {
