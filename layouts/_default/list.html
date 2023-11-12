@@ -58,10 +58,10 @@
 </div>
 <div class="pagination">
 {{ if .IsHome }}
-	{{ if .Site.Params.paginate_home }}
+	{{ if .Site.Params.cards_paginate_home }}
 		{{ partial "pagination" . }}
 	{{ end }}
-{{ else if .Site.Params.paginate_categories }}
+{{ else if .Site.Params.cards_paginate_categories }}
 	{{ partial "pagination" . }}
 {{ end }}
 </div>

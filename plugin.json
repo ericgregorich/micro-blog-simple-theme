@@ -34,13 +34,18 @@
       "type": "boolean"
     },
     {
-      "field": "params.paginate_home",
+      "field": "params.cards_paginate_home",
       "label": "Enable home page pagination?",
       "type": "boolean"
     },
     {
-      "field": "params.paginate_categories",
+      "field": "params.cards_paginate_categories",
       "label": "Enable category page pagination?",
+      "type": "boolean"
+    },
+    {
+      "field": "params.cards_paginate_replies",
+      "label": "Enable reply page pagination?",
       "type": "boolean"
     },
     {
