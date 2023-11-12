@@ -34,6 +34,16 @@
       "type": "boolean"
     },
     {
+      "field": "params.paginate_home",
+      "label": "Enable home page pagination?",
+      "type": "boolean"
+    },
+    {
+      "field": "params.paginate_categories",
+      "label": "Enable category page pagination?",
+      "type": "boolean"
+    },
+    {
       "field": "params.paginate",
       "label": "Number of posts per page",
       "type": "integer"
