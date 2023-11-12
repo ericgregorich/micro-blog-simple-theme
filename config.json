@@ -31,6 +31,8 @@
     "showTinylyticsKudos": false,
     "showTagsHome": false,
     "paginate": 20,
-    "sortTags": false
+    "sortTags": false,
+    "paginate_categories": true,
+    "paginate_home": true
   }
 }
