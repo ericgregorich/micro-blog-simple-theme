@@ -35,17 +35,17 @@
     },
     {
       "field": "params.paginate_home",
-      "label": "Enable home page pagination?",
+      "label": "Enable pagination on home page?",
       "type": "boolean"
     },
     {
       "field": "params.paginate_categories",
-      "label": "Enable category page pagination?",
+      "label": "Enable pagination on category pages?",
       "type": "boolean"
     },
     {
       "field": "params.paginate_replies",
-      "label": "Enable reply page pagination?",
+      "label": "Enable pagination on reply page?",
       "type": "boolean"
     },
     {
