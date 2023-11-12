@@ -37,3 +37,9 @@
   </ul>
 </div>
 {{ end }}
+
+<div class="pagination">
+	{{ if .Site.Params.cards_paginate_replies }}
+			{{ partial "pagination" . }}
+		{{ end }}
+	</div>
