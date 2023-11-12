@@ -1,39 +1,43 @@
 {{ define "main" }}
-<div class="home h-feed">
+{{ if .Site.Params.showTagsHome}}
 
-  <ul class="post-list">
+  {{ $list := ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
+  {{ if gt (len $list) 0 }}
+	
+    {{/* Sort the categories, if parameter is TRUE */}}
+    {{ if .Site.Params.sortTags }}
+      {{ $list = sort $list "Title" }}
+    {{ end }}
+	
+    <div class="archive_categories">
+      {{ range $list }}
+        <p><a href="{{ .Permalink }}">{{ .Title }}</a></p>
+      {{ end }}
+    </div>
+  {{ end }}
+
+{{ end }}
+
+<div class="post-list-title"><h1>{{ .Title }}</h1></div>
+<ul id="post-list">
+
 	{{ if .Site.Params.paginate_replies }}
-		{{ $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Type" "reply") (index .Site.Params "paginate" | default 20) }}
+		{{ $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Type" "reply") }}
 		{{ $list := $paginator.Pages }}
 		{{ range $list  }}
-		  <li class="post-list-item">
-			{{ if .Title }}
-				<h1><a href="{{ .Permalink }}" class="post-list-item-title">{{ .Title }}</a></h1>
-			{{ end }}
-
-			<a href="{{ .Permalink }}" class="post-list-item-date"><span class="post-meta"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time></span></a>
-
-			<div class="post-list-item-content">
-				{{ .Content }}
-			</div>
-		  </li>
+			{{ partial "post-item.html" . }}
 		{{ end }}
-    {{ else }}
+	{{ else }}
 		{{ $list := first 25 (where .Data.Pages.ByDate.Reverse "Type" "reply") }}
 		{{ range $list  }}
-		  <li class="post-list-item">
-			{{ if .Title }}
-				<h1><a href="{{ .Permalink }}" class="post-list-item-title">{{ .Title }}</a></h1>
-			{{ end }}
-
-			<a href="{{ .Permalink }}" class="post-list-item-date"><span class="post-meta"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time></span></a>
-
-			<div class="post-list-item-content">
-				{{ .Content }}
-			</div>
-		  </li>
+			{{ partial "post-item.html" . }}
 		{{ end }}
-    {{ end }}
-  </ul>
-</div>
+	{{ end }}
+
+	</ul>
+
+	{{ if .Site.Params.paginate_replies }}
+		{{ partial "pagination" . }}
+	{{ end }}
+
 {{ end }}
