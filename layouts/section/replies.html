@@ -2,7 +2,7 @@
 <div class="home h-feed">
 
   <ul class="post-list">
-	{{ if .Site.Params.cards_paginate_replies }}
+	{{ if .Site.Params.paginate_replies }}
 		{{ $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Type" "reply") (index .Site.Params "paginate" | default 20) }}
 		{{ $list := $paginator.Pages }}
 		{{ range $list  }}
@@ -37,9 +37,3 @@
   </ul>
 </div>
 {{ end }}
-
-<div class="pagination">
-	{{ if .Site.Params.cards_paginate_replies }}
-			{{ partial "pagination" . }}
-		{{ end }}
-	</div>

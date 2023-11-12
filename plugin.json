@@ -34,17 +34,17 @@
       "type": "boolean"
     },
     {
-      "field": "params.cards_paginate_home",
+      "field": "params.paginate_home",
       "label": "Enable home page pagination?",
       "type": "boolean"
     },
     {
-      "field": "params.cards_paginate_categories",
+      "field": "params.paginate_categories",
       "label": "Enable category page pagination?",
       "type": "boolean"
     },
     {
-      "field": "params.cards_paginate_replies",
+      "field": "params.paginate_replies",
       "label": "Enable reply page pagination?",
       "type": "boolean"
     },

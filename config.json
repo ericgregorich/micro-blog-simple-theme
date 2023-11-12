@@ -32,8 +32,8 @@
     "showTagsHome": false,
     "paginate": 20,
     "sortTags": false,
-    "cards_paginate_categories": true,
-    "cards_paginate_home": true,
-    "cards_paginate_replies": true
+    "paginate_categories": true,
+    "paginate_home": true,
+    "paginate_replies": true
   }
 }
