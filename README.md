@@ -22,6 +22,7 @@ Email me from this [form](https://ericgregorich.com/email/) if you have any issu
 
 ## Change Log
 
+- 2023-11-12 v1.4.0 Added ability to sort category tags alphabetically. Thanks [@lostinhaste](https://micro.blog/lostinhaste)!
 - 2023-11-06 v1.3.8 Renamed "Tags" to "Categories". Categories now show on all pages when Show Categories is enabled.
 - 2023-09-10 v1.3.7 Minor CSS tweaks to nav and form controls.
 - 2023-09-10 v1.3.6 Added setting to set the number of posts per page (pagination).
