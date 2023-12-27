@@ -1,11 +1,26 @@
 {
-  "version": "1.4.2",
+  "version": "1.4.3",
   "title": "Cards Theme",
   "description": "A simple and customizable Micro.blog theme.",
   "fields": [
     {
       "field": "params.showFullPost",
       "label": "Show full post on home? ",
+      "type": "boolean"
+    },
+    {
+      "field": "params.showPostTimeOnSingle",
+      "label": "Show time of the post, in addition to the date, on the entry's page?",
+      "type": "boolean"
+    },
+    {
+      "field": "params.showPostTimeOnIndex",
+      "label": "Show time of the post, in addition to the date, on the Home page?",
+      "type": "boolean"
+    },
+    {
+      "field": "params.showPostTimeOnArchive",
+      "label": "Show time of the post, in addition to the date, on the Archive page?",
       "type": "boolean"
     },
     {
