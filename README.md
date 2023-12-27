@@ -21,7 +21,7 @@ Cards is a simple and lightweight theme for Micro.blog.
 Email me from this [form](https://ericgregorich.com/email/) if you have any issues.
 
 ## Change Log
--2023-12-27 v1.4.3 Added option to include the time next to the date. Thanks [@lostinhaste](https://micro.blog/lostinhaste)!
+- 2023-12-27 v1.4.3 Added option to include the time next to the date. Thanks [@lostinhaste](https://micro.blog/lostinhaste)!
 - 2023-12-17 v1.4.2 Tweaked the head tag to move the site title to the end (if there is a title). Very minor CSS tweak for tags.
 - 2023-11-12 v1.4.1 Added pagination parameters that should enable/disable per page type based on your selection.
 - 2023-11-12 v1.4.0 Added ability to sort category tags alphabetically. Thanks [@lostinhaste](https://micro.blog/lostinhaste)!
