@@ -19,6 +19,12 @@
 
 {{ end }}
 
+{{/* Get the display version of the Date/Time for the post */}}
+{{ $postDateTime := .Date.Format "Jan 2, 2006" }}
+{{ if .Site.Params.showPostTimeOnSingle}}
+	{{ $postDateTime = .Date.Format "Jan 2, 2006 at 3:04pm" }}
+{{ end }}
+
 <div class="post h-entry">
   <header class="post-header">
 		{{ if .Title }}
@@ -26,7 +32,7 @@
 		  	<div class="post-meta">
 				<span>
 					<a class="u-url" href="{{ .Permalink }}">
-						<time class="post-list-item-date dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+						<time class="post-list-item-date dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ $postDateTime }}</time>
 					</a>
 				</span>
 				{{ if .Site.Params.showReadingTime }}
@@ -52,7 +58,7 @@
 	{{ else }}
 		<h1 class="post-list-item-title">
 			<a class="u-url" href="{{ .Permalink }}">
-				<time class="post-list-item-date dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+				<time class="post-list-item-date dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ $postDateTime }}</time>
 			</a>
 		</h1>
 		<div class="post-meta">

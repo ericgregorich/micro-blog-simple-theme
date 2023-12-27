@@ -23,11 +23,18 @@
   <ul class="post-list">
     {{ $paginator := .Paginate (where .Site.Pages.ByDate.Reverse "Type" "post") (index .Site.Params "paginate" | default 20) }}
     {{ range $paginator.Pages }}
+
+    {{/* Get the display version of the Date/Time for the post */}}
+    {{ $postDateTime := .Date.Format "Jan 2, 2006" }}
+    {{ if .Site.Params.showPostTimeOnIndex}}
+	    {{ $postDateTime = .Date.Format "Jan 2, 2006 at 3:04pm" }}
+    {{ end }}
+
     {{ if .Title }}
       {{ if .Site.Params.showFullPost }}
       <li class="post-list-item">
         <h1 class="p-name"><a href="{{ .Permalink }}" class="post-list-item-title">{{ .Title }}</a></h1>
-        <a href="{{ .Permalink }}" class="post-list-item-date"><span class="post-meta"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time></span></a>
+        <a href="{{ .Permalink }}" class="post-list-item-date"><span class="post-meta"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ $postDateTime }}</time></span></a>
         <div class="post-list-item-content">
           {{ .Content }}
         </div>
@@ -35,7 +42,7 @@
       {{ else }}
       <li class="post-list-item">
         <h1 class="p-name"><a href="{{ .Permalink }}" class="post-list-item-title">{{ .Title }}</a></h1>
-        <a href="{{ .Permalink }}" class="post-list-item-date"><span class="post-meta"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time></span></a>
+        <a href="{{ .Permalink }}" class="post-list-item-date"><span class="post-meta"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ $postDateTime }}</time></span></a>
         <div class="post-list-item-content">
           <p>{{ .Summary | truncate 300 }} <a href="{{ .Permalink }}" class="continue-link">read more</a></p>
         </div>
@@ -44,8 +51,7 @@
     {{ else }}
       <li class="post-list-item">
         <a href="{{ .Permalink }}" class="post-list-item-date"><span class="post-meta"><time class="dt-published"
-              datetime="{{ .Date.Format " 2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006"
-              }}</time></span></a>
+              datetime="{{ .Date.Format " 2006-01-02 15:04:05 -0700" }}">{{ $postDateTime }}</time></span></a>
         <div class="post-list-item-content">
           {{ .Content }}
         </div>
