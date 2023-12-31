@@ -129,11 +129,6 @@
       "type": "color"
     },
     {
-      "field": "params.usedarktheme",
-      "label": "Enable Dark Theme Toggle? This will alternate between the colors above and the colors below.",
-      "type": "boolean"
-    },
-    {
       "field": "params.dark_body_background_color",
       "label": "(Dark) Body Background",
       "type": "color"
