@@ -21,6 +21,7 @@ Cards is a simple and lightweight theme for Micro.blog.
 Email me from this [form](https://ericgregorich.com/email/) if you have any issues.
 
 ## Change Log
+- 2023-12-31 v1.5 The dark mode toggle has been removed and replaced with auto dark mode based on system settings. Cleaned up some CSS. Dates now appear as links. The time now displays with the date by default.
 - 2023-12-27 v1.4.3 Added option to include the time next to the date. Thanks [@lostinhaste](https://micro.blog/lostinhaste)!
 - 2023-12-17 v1.4.2 Tweaked the head tag to move the site title to the end (if there is a title). Very minor CSS tweak for tags.
 - 2023-11-12 v1.4.1 Added pagination parameters that should enable/disable per page type based on your selection.
