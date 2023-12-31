@@ -2,10 +2,10 @@
   "params": {
     "light_body_background_color": "#f7f7f7",
     "light_body_text_color": "#242424",
-    "light_body_accent_color": "#0042AA",
+    "light_body_accent_color": "#446dad",
     "light_card_background_color": "#ffffff",
     "light_card_text_color": "#252525",
-    "light_card_accent_color": "#0042AA",
+    "light_card_accent_color": "#446dad",
     "light_hover_color": "#d58400",
     "light_shadow_color": "#d2cfcf",
     "light_blockquote_color": "#f8eec4",
