@@ -14,22 +14,8 @@
     --meta-color: {{ .Site.Params.light_meta_color }};
   }
   
-  [data-theme="light"] {
-    --body-background-color: {{ .Site.Params.light_body_background_color }};
-    --body-text-color: {{ .Site.Params.light_body_text_color }};
-    --body-accent-color: {{ .Site.Params.light_body_accent_color }};
-    --card-background-color: {{ .Site.Params.light_card_background_color }};
-    --card-text-color: {{ .Site.Params.light_card_text_color }};
-    --card-accent-color: {{ .Site.Params.light_card_accent_color }};
-    --hover-color: {{ .Site.Params.light_hover_color }};
-    --blockquote: {{ .Site.Params.light_blockquote_color }};
-    --blockquote-border: {{ .Site.Params.light_blockquote_border }};
-    --blockquote-text: {{ .Site.Params.light_blockquote_text }};
-    --shadow-color: {{ .Site.Params.light_shadow_color }};
-    --meta-color: {{ .Site.Params.light_meta_color }};
-  }
-
-  [data-theme="dark"] {
+  @media (prefers-color-scheme: dark) {
+  :root {
     --body-background-color: {{ .Site.Params.dark_body_background_color }};
     --body-text-color: {{ .Site.Params.dark_body_text_color }};
     --body-accent-color: {{ .Site.Params.dark_body_accent_color }};
@@ -43,5 +29,6 @@
     --shadow-color: {{ .Site.Params.dark_shadow_color }};
     --meta-color: {{ .Site.Params.dark_meta_color }};
   }
+}
 
 </style>
