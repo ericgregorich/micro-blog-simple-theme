@@ -91,7 +91,7 @@ a.site-header-title-link:hover {
 }
 
 /* Desktop layout */
-header .site-header{
+.site-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -114,7 +114,7 @@ header .site-header{
 }
 
 @media screen and (max-width: 768px) {
-  header {
+  .site-header {
     flex-direction: column;
     align-items: center;
   }
