@@ -98,15 +98,16 @@ a.site-header-title-link:hover {
 }
 
 .site-header-logo {
-  width: 150px;
+  width: 100px;
 }
 
 .site-header-logo img {
-  max-width: 100px;
+  width: 100px;
 }
 
 .site-header-content {
   text-align: left;
+  width: 650px;
 }
 
 .site-header-row {
