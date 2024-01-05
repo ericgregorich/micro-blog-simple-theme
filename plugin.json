@@ -4,6 +4,11 @@
   "description": "A simple and customizable Micro.blog theme.",
   "fields": [
     {
+      "field": "params.headertext",
+      "label": "Description to show in your header.",
+      "type": "text"
+    },
+    {
       "field": "params.showFullPost",
       "label": "Show full post on home? ",
       "type": "boolean"
