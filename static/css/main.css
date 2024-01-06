@@ -98,7 +98,8 @@ a.site-header-title-link:hover {
 }
 
 .site-header-logo {
-  width: 100px;
+  width: 150px;
+  padding-bottom: 5px;
 }
 
 .site-header-logo img {
