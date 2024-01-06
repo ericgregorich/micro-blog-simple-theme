@@ -107,7 +107,7 @@ a.site-header-title-link:hover {
 
 .site-header-content {
   text-align: left;
-  width: 650px;
+  width: 100%;
 }
 
 .site-header-row {
