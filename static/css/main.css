@@ -3,7 +3,7 @@
   --font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   --font-size-normal: 1.1rem;
-  --font-size-small: 1rem;
+  --font-size-small: .9rem;
   --font-size-large: 1.5rem;
   --font-size-title: 1.5rem;
   --width-max: 780px;
@@ -16,7 +16,7 @@ body {
   font-family: var(--font-family);
   font-size: var(--font-size-normal);
   color: var(--body-text-color);
-  line-height: 1.4;
+  line-height: 1.5;
   background-color: var(--body-background-color);
   margin-top: 30px;
 }
@@ -95,38 +95,27 @@ a.site-header-title-link:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .site-header-logo {
-  width: 150px;
-  padding-bottom: 5px;
+  order: 1; 
 }
 
 .site-header-logo img {
-  width: 100px;
+  width: 80px;
 }
 
 .site-header-content {
   text-align: left;
   width: 100%;
+  order: 2; 
+  text-align: center;
 }
 
 .site-header-row {
   margin-bottom: 5px;
-}
-
-@media screen and (max-width: 768px) {
-  .site-header {
-    flex-direction: column;
-    align-items: center;
-  }
-  .site-header-logo {
-    order: 1; 
-  }
-  .site-header-content {
-    order: 2; 
-    text-align: center;
-  }
 }
 
 /* Site Nav */
@@ -310,11 +299,11 @@ blockquote {
 
 /** Code */
 pre {
-  background-color: #333333;
+  background-color: #272822;
   color: #f9f9f9;
   overflow: auto;
   padding: 15px;
-  font-size: var(--font-size-small);
+  font-size: 16px;
 }
 
 /** Categories */
