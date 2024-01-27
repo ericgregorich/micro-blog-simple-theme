@@ -2,15 +2,18 @@
 
 Cards is a simple and lightweight theme for Micro.blog.
 
-- Posts are styled as "Cards,” hence the theme name.
+- Posts are styled as "Cards,” hence the name of the theme.
+- A wide range of color options. 
 - Optimized for performance, accessibility, and SEO.
 - Compatible with other plugins.
 - Easily change the theme colors from your plugin settings.
-- A toggle to allow visitors to toggle between light and dark mode.
+- Automatic Dark Mode detection.
 - An option to enable Reading Time on posts greater than 1 minute long.
 - An option to truncate posts on the home and category pages.
-- An option to show Tinylytics Kudos below your
-- Shows the post categories as links on the post page.
+- An option to show Tinylytics Kudos below each post.
+- An option to show your categories below your main navigation.
+- An option to show the time in addition to the date for each post.
+- And more features.
 
 !["Card Theme Samples"](https://raw.githubusercontent.com/ericgregorich/micro-blog-cards-theme/master/screenshot.png)
 
