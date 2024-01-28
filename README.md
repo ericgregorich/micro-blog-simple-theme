@@ -20,10 +20,15 @@ Cards is a simple and lightweight theme for Micro.blog.
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/M4M0DLOZR)
 
 ## Support
-
-Email me from this [form](https://ericgregorich.com/email/) if you have any issues.
+If you have any issues, you can either create an issue on [GitHub](https://github.com/ericgregorich/micro-blog-cards-theme/issues), or send me an email using the form on the bottom right corner of the [Cards Theme](https://cards.ericgregorich.com) page.
 
 ## Change Log
+- 2024-01-28 v1.6 Fixed issue with embedded content (YouTube) on mobile. 
+- 2024-01-28 v1.6 Updated default dark theme.
+- 2024-01-28 v1.6 Added a new configuration parameter to set the border color.
+- 2024-01-28 v1.6 Updated categories (tags) CSS to look better.
+- 2024-01-28 v1.6 Updated the "Response" buttons (Conversations, Reply To, etc.) to look nicer and also wrap when on smaller screens.
+- 2024-01-28 v1.6 Added support for the [Reply on Mastodon](https://micro.blog/account/plugins/view/111) plugin.
 - 2023-12-31 v1.5 The dark mode toggle has been removed and replaced with auto dark mode based on system settings. Cleaned up some CSS. Dates now appear as links. The time now displays with the date by default.
 - 2023-12-27 v1.4.3 Added option to include the time next to the date. Thanks [@lostinhaste](https://micro.blog/lostinhaste)!
 - 2023-12-17 v1.4.2 Tweaked the head tag to move the site title to the end (if there is a title). Very minor CSS tweak for tags.
