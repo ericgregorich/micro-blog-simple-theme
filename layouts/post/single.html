@@ -87,11 +87,12 @@
 
 </div>
 {{ if eq .Type "post"}}
-    {{ if or (templates.Exists "partials/reply-by-email.html") (templates.Exists "partials/conversation-link.html") (.Site.Params.showTinylyticsKudos) }}
+    {{ if or (templates.Exists "partials/reply-by-email.html") (templates.Exists "partials/conversation-link.html") (templates.Exists "partials/reply-on-mastodon.html") (.Site.Params.showTinylyticsKudos) }}
 		<div class="response-options">
 			{{ if .Site.Params.showTinylyticsKudos}}<button class="tinylytics_kudos" type="button" aria-label="Kudos"></button>{{ end }}
 			{{ if templates.Exists "partials/conversation-link.html" }}{{ partial "conversation-link.html" . }}{{ end }}
 			{{ if templates.Exists "partials/reply-by-email.html" }}{{ partial "reply-by-email.html" . }}{{ end }}
+			{{ if templates.Exists "partials/reply-on-mastodon.html" }} {{ partial "reply-on-mastodon.html" . }} {{ end }}
 		</div>
 {{ end }}
   {{ end }}
