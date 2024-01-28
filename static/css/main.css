@@ -298,7 +298,7 @@ blockquote {
 .response-options .tinylytics_kudos {
   padding: 6px 8px 4px 8px;
   color: var(--card-text-color);
-  border: 1px solid var(--shadow-color);
+  border: 1px solid var(--card-border-color);
   font-size: var(--font-size-small);
   margin: 5px;
   border-radius: 8px;
