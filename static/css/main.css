@@ -3,7 +3,7 @@
   --font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   --font-size-normal: 1.1rem;
-  --font-size-small: .9rem;
+  --font-size-small: 0.9rem;
   --font-size-large: 1.5rem;
   --font-size-title: 1.5rem;
   --width-max: 780px;
@@ -83,6 +83,9 @@ a.site-header-title-link:hover {
   min-width: var(--width-min);
   margin: auto;
   text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .site-header-title,
@@ -90,17 +93,8 @@ a.site-header-title-link:hover {
   padding: 10px;
 }
 
-/* Desktop layout */
-.site-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  align-items: center;
-}
-
 .site-header-logo {
-  order: 1; 
+  order: 1;
 }
 
 .site-header-logo img {
@@ -110,7 +104,7 @@ a.site-header-title-link:hover {
 .site-header-content {
   text-align: left;
   width: 100%;
-  order: 2; 
+  order: 2;
   text-align: center;
 }
 
@@ -154,6 +148,7 @@ a.site-header-title-link {
   margin-bottom: 30px;
   display: flex;
   justify-content: center;
+  flex-direction: row;
 }
 
 .response-options a,
@@ -161,10 +156,11 @@ a.site-header-title-link {
   padding: 6px 8px 4px 8px;
   color: var(--card-text-color);
   border: 1px solid var(--shadow-color);
-  font-size: 1rem;
+  font-size: var(--font-size-small);
   margin: 5px;
-  border-radius: 5px;
+  border-radius: 8px;
   background-color: var(--card-background-color);
+  white-space: nowrap;
 }
 
 .response-options a:hover,
@@ -174,6 +170,12 @@ a.site-header-title-link {
 
 .site-image {
   border-radius: 50px;
+}
+
+@media (max-width: 500px) {
+  .response-options {
+    flex-direction: column;
+  }
 }
 
 /** Site Footer */
@@ -323,10 +325,10 @@ div.archive_categories p a {
   background-color: var(--card-background-color);
   border: 1px solid var(--shadow-color);
   box-shadow: 0px 3px 5px 0px var(--shadow-color);
-  font-size: 0.9rem;
-  border-radius: 2px;
-  text-transform: lowercase;
-  padding: 2px 8px 4px 8px;
+  font-size: var(--font-size-small);
+  border-radius: 8px;
+  padding: 3px 8px 5px 8px;
+  white-space: nowrap;
 }
 
 div.archive_categories span {
