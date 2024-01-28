@@ -73,6 +73,14 @@ img {
   border-radius: 5px;
 }
 
+/* ============================== Embedded Content ============================== */
+@media (max-width: 560) {
+  iframe {
+    max-width: min-content;
+  }
+}
+
+
 /* ============================== Links ============================== */
 a,
 a:visited {
