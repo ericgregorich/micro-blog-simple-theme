@@ -1,6 +1,8 @@
 /** CSS that is configurable through the plugin settings are applied in Cards.html file. */
 :root {
-  --font-family: "__inter_5b82ff", "__inter_Fallback_5b82ff", Inter, ui-sans-serif, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", system-ui;
+  --font-family: '__inter_5b82ff', '__inter_Fallback_5b82ff', Inter,
+    ui-sans-serif, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji', system-ui;
   --font-size-normal: 1rem;
   --font-size-small: 0.9rem;
   --font-size-large: 1.4rem;
@@ -10,7 +12,7 @@
   --width-max-image: 720px;
 }
 
-/** Basic styling */
+/* ============================== Main ============================== */
 body {
   font-family: var(--font-family);
   font-size: var(--font-size-normal);
@@ -51,7 +53,16 @@ hr {
   border-top: 1px dashed var(--shadow-color);
 }
 
-/** Images */
+/** Code */
+pre {
+  background-color: #272822;
+  color: #f9f9f9;
+  overflow: auto;
+  padding: 15px;
+  font-size: 16px;
+}
+
+/* ============================== Images ============================== */
 img {
   max-width: 100%;
   height: auto;
@@ -62,7 +73,7 @@ img {
   border-radius: 5px;
 }
 
-/** Links */
+/* ============================== Links ============================== */
 a,
 a:visited {
   color: var(--body-accent-color);
@@ -75,7 +86,7 @@ a.site-header-title-link:hover {
   text-decoration: none;
 }
 
-/** Site Header */
+/* ============================== Site Header ============================== */
 .site-header {
   margin-top: 20px;
   max-width: var(--width-max);
@@ -111,13 +122,12 @@ a.site-header-title-link:hover {
   margin-bottom: 5px;
 }
 
-/* Site Nav */
-.site-header-nav {
+/* ============================== Site Nav ============================== */
+.site-nav {
   max-width: var(--width-max);
   min-width: var(--width-min);
-  margin: auto;
+  margin: 15px auto 15px auto;
   text-align: center;
-  margin-bottom: 10px;
 }
 
 a.site-nav-link,
@@ -141,64 +151,40 @@ a.site-header-title-link {
   color: var(--body-text-color);
 }
 
-/** Response Options */
-.response-options {
-  margin-top: 30px;
-  margin-bottom: 30px;
+/* ============================== Categories ============================== */
+div.archive_categories {
   display: flex;
+  flex-flow: wrap;
   justify-content: center;
-  flex-direction: row;
 }
 
-.response-options a,
-.response-options .tinylytics_kudos {
-  padding: 6px 8px 4px 8px;
-  color: var(--card-text-color);
-  border: 1px solid var(--shadow-color);
-  font-size: var(--font-size-small);
+div.archive_categories p {
   margin: 5px;
-  border-radius: 8px;
+}
+
+div.archive_categories p a {
+  color: var(--body-text-color);
+  margin-right: 5px;
   background-color: var(--card-background-color);
+  border: 1px solid var(--shadow-color);
+  box-shadow: 0px 3px 5px 0px var(--shadow-color);
+  font-size: var(--font-size-small);
+  border-radius: 8px;
+  padding: 3px 8px 5px 8px;
   white-space: nowrap;
 }
 
-.response-options a:hover,
-.response-options button.tinylytics_kudos:hover {
-  color: var(--body-accent-color);
+div.archive_categories span {
+  margin-right: 15px;
 }
 
-.site-image {
-  border-radius: 50px;
+div.archive_categories p a:hover {
+  color: white;
+  background-color: var(--hover-color);
+  border: 1px solid var(--body-text-color);
 }
 
-@media (max-width: 500px) {
-  .response-options {
-    flex-direction: column;
-  }
-}
-
-/** Site Footer */
-.site-footer {
-  max-width: var(--width-max);
-  min-width: var(--width-min);
-  margin: auto;
-  text-align: center;
-  font-size: var(--font-size-small);
-}
-
-.rss-subscribe {
-  text-align: center;
-}
-
-.rss-subscribe a {
-  color: var(--body-accent-color);
-}
-
-.rss-subscribe a:hover {
-  color: var(--hover-color);
-}
-
-/** Content */
+/* ============================== Site Content ============================== */
 .page-content {
   max-width: var(--width-max);
   min-width: var(--width-min);
@@ -220,7 +206,8 @@ div.microblog_conversation {
   border-radius: 8px;
   padding: 30px;
   margin-top: 25px;
-  box-shadow: var(--shadow-color) 0px 30px 30px -50px, var(--shadow-color) 0px 30px 30px -30px;
+  box-shadow: var(--shadow-color) 0px 30px 30px -50px,
+    var(--shadow-color) 0px 30px 30px -30px;
   background-color: var(--card-background-color);
   color: var(--card-text-color);
   border: 1px solid var(--card-border-color);
@@ -298,54 +285,69 @@ blockquote {
   padding: 20px;
 }
 
-/** Code */
-pre {
-  background-color: #272822;
-  color: #f9f9f9;
-  overflow: auto;
-  padding: 15px;
-  font-size: 16px;
-}
-
-/** Categories */
-div.archive_categories {
+/* ============================== Response Options ============================== */
+.response-options {
+  margin-top: 30px;
+  margin-bottom: 30px;
   display: flex;
-  flex-flow: wrap;
   justify-content: center;
+  flex-direction: row;
 }
 
-div.archive_categories p {
-  margin: 5px;
-}
-
-div.archive_categories p a {
-  color: var(--body-text-color);
-  margin-right: 5px;
-  background-color: var(--card-background-color);
+.response-options a,
+.response-options .tinylytics_kudos {
+  padding: 6px 8px 4px 8px;
+  color: var(--card-text-color);
   border: 1px solid var(--shadow-color);
-  box-shadow: 0px 3px 5px 0px var(--shadow-color);
   font-size: var(--font-size-small);
+  margin: 5px;
   border-radius: 8px;
-  padding: 3px 8px 5px 8px;
+  background-color: var(--card-background-color);
   white-space: nowrap;
 }
 
-div.archive_categories span {
-  margin-right: 15px;
+.response-options a:hover,
+.response-options button.tinylytics_kudos:hover {
+  color: var(--body-accent-color);
 }
 
-div.archive_categories p a:hover {
-  color: white;
-  background-color: var(--hover-color);
-  border: 1px solid var(--body-text-color);
+.site-image {
+  border-radius: 50px;
 }
 
-/** Photos */
+@media (max-width: 500px) {
+  .response-options {
+    flex-direction: column;
+  }
+}
+
+/* ============================== Site Footer ============================== */
+.site-footer {
+  max-width: var(--width-max);
+  min-width: var(--width-min);
+  margin: auto;
+  text-align: center;
+  font-size: var(--font-size-small);
+}
+
+.rss-subscribe {
+  text-align: center;
+}
+
+.rss-subscribe a {
+  color: var(--body-accent-color);
+}
+
+.rss-subscribe a:hover {
+  color: var(--hover-color);
+}
+
+/* ============================== Photos ============================== */
 .photos-grid-container {
   grid-template-columns: 32% 32% 32%;
 }
 
-/** Form fields */
+/* ============================== Forms ============================== */
 input[type='email'],
 input[type='text'] {
   box-sizing: border-box;
@@ -393,7 +395,7 @@ form button {
   font-size: var(--font-size-normal);
 }
 
-/** Pagination */
+/* ============================== Pagination ============================== */
 .pagination {
   text-align: center;
   padding: 30px 0px 10px 0px;
