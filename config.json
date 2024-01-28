@@ -8,7 +8,7 @@
     "light_card_accent_color": "#446dad",
     "light_hover_color": "#d58400",
     "light_shadow_color": "#d2cfcf",
-    "light_card_border_color": "EBE2CD",
+    "light_card_border_color": "#ded5b5",
     "light_blockquote_color": "#f8eec4",
     "light_blockquote_border": "#d6a32e",
     "light_blockquote_text": "#2a2a2b",
@@ -21,7 +21,7 @@
     "dark_card_accent_color": "#16a5d4",
     "dark_hover_color": "#e27e2c",
     "dark_shadow_color": "#061d28",
-    "dark_card_border_color": "EBE2CD",
+    "dark_card_border_color": "#ded5b5",
     "dark_blockquote_color": "#f8eec4",
     "dark_blockquote_border": "#d6a32e",
     "dark_blockquote_text": "#2a2a2b",
@@ -33,11 +33,12 @@
     "showPostTimeOnArchive": true,
     "showPostCategories": true,
     "showTinylyticsKudos": false,
-    "showTagsHome": false,
+    "showTagsHome": true,
     "paginate": 20,
-    "sortTags": false,
+    "sortTags": true,
     "paginate_categories": true,
     "paginate_home": true,
-    "paginate_replies": true
+    "paginate_replies": true,
+    "headertext": ""
   }
 }
