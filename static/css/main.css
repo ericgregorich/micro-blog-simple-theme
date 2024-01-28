@@ -220,7 +220,7 @@ div.microblog_conversation {
   border-radius: 8px;
   padding: 30px;
   margin-top: 25px;
-  box-shadow: var(--shadow-color) 0px 1px 1px 0px inset, var(--shadow-color) 0px 30px 30px -20px, var(--shadow-color) 0px 10px 30px -30px;
+  box-shadow: var(--shadow-color) 0px 30px 30px -50px, var(--shadow-color) 0px 30px 30px -30px;
   background-color: var(--card-background-color);
   color: var(--card-text-color);
   border: 1px solid var(--card-border-color);
