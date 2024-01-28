@@ -74,11 +74,14 @@ img {
 }
 
 /* ============================== Embedded Content ============================== */
+iframe {
+  display: block;
+  margin: auto;
+}
+
 @media (max-width: 560) {
   iframe {
     max-width: min-content;
-    display: block;
-    margin: auto;
   }
 }
 
