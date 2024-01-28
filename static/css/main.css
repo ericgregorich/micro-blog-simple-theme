@@ -77,14 +77,8 @@ img {
 iframe {
   display: block;
   margin: auto;
+  max-width: 100%;
 }
-
-@media (max-width: 560) {
-  iframe {
-    max-width: min-content;
-  }
-}
-
 
 /* ============================== Links ============================== */
 a,
