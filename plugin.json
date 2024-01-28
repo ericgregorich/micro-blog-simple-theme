@@ -110,7 +110,12 @@
     },
     {
       "field": "params.light_shadow_color",
-      "label": "(Light)Shadow",
+      "label": "(Light) Shadow",
+      "type": "color"
+    },
+    {
+      "field": "params.light_card_border_color",
+      "label": "(Light) Border",
       "type": "color"
     },
     {
@@ -171,6 +176,11 @@
     {
       "field": "params.dark_shadow_color",
       "label": "(Dark) Shadow",
+      "type": "color"
+    },
+    {
+      "field": "params.dark_card_border_color",
+      "label": "(Dark) Border",
       "type": "color"
     },
     {

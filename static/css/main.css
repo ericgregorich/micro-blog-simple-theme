@@ -1,7 +1,6 @@
 /** CSS that is configurable through the plugin settings are applied in Cards.html file. */
 :root {
-  --font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
-    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  --font-family: "__inter_5b82ff", "__inter_Fallback_5b82ff", Inter, ui-sans-serif, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", system-ui;
   --font-size-normal: 1.1rem;
   --font-size-small: 0.9rem;
   --font-size-large: 1.5rem;
@@ -221,10 +220,10 @@ div.microblog_conversation {
   border-radius: 8px;
   padding: 30px;
   margin-top: 25px;
-  box-shadow: var(--shadow-color) 0px 4px 8px -2px,
-    var(--shadow-color) 0px 0px 0px 1px;
+  box-shadow: var(--shadow-color) 0px 1px 1px 0px inset, var(--shadow-color) 0px 30px 30px -20px, var(--shadow-color) 0px 10px 30px -30px;
   background-color: var(--card-background-color);
   color: var(--card-text-color);
+  border: 1px solid var(--card-border-color);
 }
 
 li.post-list-item a,
