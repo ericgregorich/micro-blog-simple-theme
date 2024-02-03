@@ -14,10 +14,10 @@
 		{{ end }}
 	{{ end }}
 
-	{{ $postDateTime := "2006-01-02" }}
-	{{ if .Site.Params.showPostTimeOnSingle}}
-		{{ $postDateTime := "2006-01-02 15:04"}}
-	{{ end }}
+    {{ $postDateTime := .Date.Format "2006-01-02 -0500" }}
+    {{ if .Site.Params.showPostTimeOnIndex}}
+	{{ $postDateTime := .Date.Format "2006-01-02 15:04:05 -0500" }}
+    {{ end }}
 
 	<div class="post h-entry">
 		<header class="post-header">
@@ -26,7 +26,7 @@
 				<div class="post-meta">
 					<span>
 						<a class="u-url" href="{{ .Permalink }}">
-							<time class="post-list-item-date dt-published" datetime="{{ .Date.Format "$postDateTime" }}">{{ .Date }}</time>
+							<time class="post-list-item-date dt-published" datetime="{{ $postDateTime }}">{{ $.Date }}</time>
 						</a>
 					</span>
 					{{ if .Site.Params.showReadingTime }}
