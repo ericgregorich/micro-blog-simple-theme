@@ -16,7 +16,7 @@
 
 	{{ $postDateTime := .Date | time.Format ":date_medium" }}
 	{{ if .Site.Params.showPostTimeOnSingle}}
-		{{ $postDateTime := .Date | time.Format ":date_medium" | union .Date | time.Format ":time_short" }}
+		{{ $postDateTime := .Date | time.Format ":date_medium" | .Date | time.Format ":time_short" }}
 	{{ end }}
 
 	<div class="post h-entry">
