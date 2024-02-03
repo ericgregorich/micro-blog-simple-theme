@@ -14,9 +14,9 @@
 		{{ end }}
 	{{ end }}
 
-    {{ $postDateTime := .Date.Format "2006-01-02 -0500" }}
+    {{ $postDateTime := .Date.Format "2006-01-02" }}
     {{ if .Site.Params.showPostTimeOnIndex}}
-	{{ $postDateTime := .Date.Format "2006-01-02 15:04:05 -0500" }}
+	{{ $postDateTime := .Date.Format "2006-01-02 15:04" }}
     {{ end }}
 
 	<div class="post h-entry">
