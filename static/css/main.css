@@ -183,6 +183,7 @@ div.archive_categories p a {
   border-radius: 8px;
   padding: 5px 8px 5px 8px;
   white-space: nowrap;
+  text-decoration: none;
 }
 
 div.archive_categories span {

@@ -15,17 +15,17 @@
     },
     {
       "field": "params.showPostTimeOnSingle",
-      "label": "Show time of the post, in addition to the date, on the entry's page?",
+      "label": "Include both time and date, on Post?",
       "type": "boolean"
     },
     {
       "field": "params.showPostTimeOnIndex",
-      "label": "Show time of the post, in addition to the date, on the Home page?",
+      "label": "Include both time and date, on Home?",
       "type": "boolean"
     },
     {
       "field": "params.showPostTimeOnArchive",
-      "label": "Show time of the post, in addition to the date, on the Archive page?",
+      "label": "Include both time and date, on Archive?",
       "type": "boolean"
     },
     {
