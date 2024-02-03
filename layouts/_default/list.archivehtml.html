@@ -18,7 +18,7 @@
 	{{ $list := (where .Site.Pages "Type" "post") }}
 	{{ range $list }}
 
-	{{ $postDateTimeSys := .Date.Format "2020-12-23T15:21:54-05:00" }}
+	{{ $postDateTimeSys :=  .Date | time.Format ":date_long"  }}
     {{ $postDateTime := .Date.Format "Jan 2, 2006" }}
     {{ if .Site.Params.showPostTimeOnIndex}}
 	    {{ $postDateTime = .Date.Format "Jan 2, 2006 3:04pm" }}
