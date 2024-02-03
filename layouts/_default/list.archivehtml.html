@@ -24,7 +24,7 @@
     {{ end }}
 
 		<p class="h-entry">
-			<a href="{{ .Permalink }}" class="u-url"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ $postDateTime }}</time></a>:
+			<a href="{{ .Permalink }}" class="u-url"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0500" }}">{{ $postDateTime }}</time></a>:
 			<span class="p-name"><b>{{ .Title }}</b></span> 
 			<span class="p-summary">{{ .Summary | truncate 100 }}</span>
 		</p>
