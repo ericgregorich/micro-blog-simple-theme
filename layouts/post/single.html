@@ -28,7 +28,7 @@
 				<div class="post-meta">
 					<span>
 						<a class="u-url" href="{{ .Permalink }}">
-							<time class="post-list-item-date dt-published">{{ $postDateTime }}</time>
+							<span class="post-list-item-date dt-published">{{ $postDateTime }}</span>
 						</a>
 					</span>
 					{{ if .Site.Params.showReadingTime }}
@@ -55,7 +55,7 @@
 			{{ else }}
 				<h1 class="post-list-item-title">
 					<a class="u-url" href="{{ .Permalink }}">
-						<time class="post-list-item-date dt-published">{{ $postDateTime }}</time>
+						<span class="post-list-item-date dt-published">{{ $postDateTime }}</span>
 					</a>
 				</h1>
 				<div class="post-meta">
