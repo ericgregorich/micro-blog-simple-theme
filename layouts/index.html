@@ -26,7 +26,7 @@
 
     {{ $postDateTime := .Date.Format "Jan 2, 2006" }}
     {{ if .Site.Params.showPostTimeOnIndex}}
-	    {{ $postDateTime = .Date.Format "Jan 2, 2006 at 3:04pm" }}
+	    {{ $postDateTime = .Date.Format "Jan 2, 2006 3:04pm" }}
     {{ end }}
 
     {{ if .Title }}
