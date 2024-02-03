@@ -85,7 +85,7 @@
     },
     {
       "field": "params.light_body_accent_color",
-      "label": "(Light) Body Accent Cor",
+      "label": "(Light) Body Accent",
       "type": "color"
     },
     {
@@ -115,12 +115,12 @@
     },
     {
       "field": "params.light_shadow_color",
-      "label": "(Light) Shadow Color",
+      "label": "(Light) Shadow",
       "type": "color"
     },
     {
       "field": "params.light_card_border_color",
-      "label": "(Light) Border Color",
+      "label": "(Light) Border",
       "type": "color"
     },
     {
@@ -150,12 +150,12 @@
     },
     {
       "field": "params.dark_body_text_color",
-      "label": "(Dark) Body Text Color",
+      "label": "(Dark) Body Text",
       "type": "color"
     },
     {
       "field": "params.dark_body_accent_color",
-      "label": "(Dark) Body Accent Color",
+      "label": "(Dark) Body Accent",
       "type": "color"
     },
     {
@@ -175,7 +175,7 @@
     },
     {
       "field": "params.dark_card_accent_color",
-      "label": "(Dark) Card Accent Color",
+      "label": "(Dark) Card Accent",
       "type": "color"
     },
     {
@@ -190,12 +190,12 @@
     },
     {
       "field": "params.dark_card_border_color",
-      "label": "(Dark) Border Color",
+      "label": "(Dark) Border",
       "type": "color"
     },
     {
       "field": "params.dark_blockquote_color",
-      "label": "(Dark) Blockquote Color",
+      "label": "(Dark) Blockquote",
       "type": "color"
     },
     {

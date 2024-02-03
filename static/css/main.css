@@ -176,7 +176,7 @@ div.archive_categories p {
 div.archive_categories p a {
   color: var(--body-text-color);
   margin-right: 5px;
-  background-color: var(--card-background-color);
+  background-color: var(--body-background-color);
   border: 1px solid var(--card-border-color);
   box-shadow: 0px 3px 5px 0px var(--shadow-color);
   font-size: var(--font-size-small);
