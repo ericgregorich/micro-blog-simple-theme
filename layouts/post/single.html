@@ -18,7 +18,7 @@
 	{{ if .Site.Params.showPostTimeOnSingle}}
 		{{ $postTime := .Date | time.Format ":time_short" }}
 		{{ $postDate := .Date | time.Format ":date_long" }}
-		$postDateTime := printf "%s" $postDate | printf "%s%s" $postTime | printf "%s"
+		{{ $postDateTime := printf "%s" $postDate | printf "%s%s" $postTime | printf "%s" }}
 	{{ end }}
 
 	<div class="post h-entry">
