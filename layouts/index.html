@@ -24,7 +24,6 @@
     {{ $paginator := .Paginate (where .Site.Pages.ByDate.Reverse "Type" "post") (index .Site.Params "paginate" | default 20) }}
     {{ range $paginator.Pages }}
 
-    {{/* Get the display version of the Date/Time for the post */}}
     {{ $postDateTime := .Date.Format "Jan 2, 2006" }}
     {{ if .Site.Params.showPostTimeOnIndex}}
 	    {{ $postDateTime = .Date.Format "Jan 2, 2006 at 3:04pm" }}
