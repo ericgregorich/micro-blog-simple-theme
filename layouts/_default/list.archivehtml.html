@@ -18,13 +18,14 @@
 	{{ $list := (where .Site.Pages "Type" "post") }}
 	{{ range $list }}
 
+	{{ $postDateTimeSys := .Date.Format "2011-11-18T14:54Z" }}
     {{ $postDateTime := .Date.Format "Jan 2, 2006" }}
     {{ if .Site.Params.showPostTimeOnIndex}}
 	    {{ $postDateTime = .Date.Format "Jan 2, 2006 3:04pm" }}
     {{ end }}
 
 		<p class="h-entry">
-			<a href="{{ .Permalink }}" class="u-url"><time class="dt-published" datetime="{{ .Date.Format "2011-11-18T14:54Z" }}">{{ $postDateTime }}</time></a>:
+			<a href="{{ .Permalink }}" class="u-url"><time class="dt-published" datetime="{{ $postDateTimeSys }}">{{ $postDateTime }}</time></a>:
 			<span class="p-name"><b>{{ .Title }}</b></span> 
 			<span class="p-summary">{{ .Summary | truncate 100 }}</span>
 		</p>

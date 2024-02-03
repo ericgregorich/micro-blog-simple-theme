@@ -14,6 +14,7 @@
 		{{ end }}
 	{{ end }}
 
+	{{ $postDateTimeSys := .Date.Format "2011-11-18T14:54Z" }}
     {{ $postDateTime := .Date.Format "Jan 2, 2006" }}
     {{ if .Site.Params.showPostTimeOnIndex}}
 	    {{ $postDateTime = .Date.Format "Jan 2, 2006 3:04pm" }}
@@ -26,7 +27,7 @@
 				<div class="post-meta">
 					<span>
 						<a class="u-url" href="{{ .Permalink }}">
-							<time class="post-list-item-date dt-published" datetime="{{ .Date.Format "2011-11-18T14:54Z" }}">{{ $postDateTime }}</time>
+							<time class="post-list-item-date dt-published" datetime="{{ $postDateTimeSys }}">{{ $postDateTime }}</time>
 						</a>
 					</span>
 					{{ if .Site.Params.showReadingTime }}
@@ -53,7 +54,7 @@
 			{{ else }}
 				<h1 class="post-list-item-title">
 					<a class="u-url" href="{{ .Permalink }}">
-						<time class="post-list-item-date dt-published" datetime="{{ .Date.Format "2011-11-18T14:54Z" }}">{{ $postDateTime }}</time>
+						<time class="post-list-item-date dt-published" datetime="{{ $postDateTimeSys }}">{{ $postDateTime }}</time>
 					</a>
 				</h1>
 				<div class="post-meta">
