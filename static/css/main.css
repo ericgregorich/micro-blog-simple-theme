@@ -190,9 +190,9 @@ div.archive_categories span {
 }
 
 div.archive_categories p a:hover {
-  color: white;
-  background-color: var(--card-hover-color);
-  border: 1px solid var(--body-text-color);
+  color: var(--card-text-color);
+  background-color: var(--card-background-color);
+  border: 1px solid var(--card-hover-color);
 }
 
 /* ============================== Site Content ============================== */
