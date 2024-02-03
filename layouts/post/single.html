@@ -14,9 +14,9 @@
 		{{ end }}
 	{{ end }}
 
-	{{ $postDateTime = "2006-01-02" }}
+	{{ $postDateTime := "2006-01-02" }}
 	{{ if .Site.Params.showPostTimeOnSingle}}
-		{{ $postDateTime = "2006-01-02 15:04"}}
+		{{ $postDateTime := "2006-01-02 15:04"}}
 	{{ end }}
 
 	<div class="post h-entry">
