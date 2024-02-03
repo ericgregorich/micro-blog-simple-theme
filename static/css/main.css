@@ -88,7 +88,7 @@ iframe {
 
 .site-header a,
 .site-header a:visited {
-  color: var(--body-accent-color);
+  color: var(--body-text-color);
   text-decoration: none;
 }
 
