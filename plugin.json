@@ -75,42 +75,42 @@
     },
     {
       "field": "params.light_body_background_color",
-      "label": "(Light) Body Background Color",
+      "label": "(Light) Body Background",
       "type": "color"
     },
     {
       "field": "params.light_body_text_color",
-      "label": "(Light) Body Text Color",
+      "label": "(Light) Body Text",
       "type": "color"
     },
     {
       "field": "params.light_body_accent_color",
-      "label": "(Light) Body Accent Color",
+      "label": "(Light) Body Accent Cor",
       "type": "color"
     },
     {
       "field": "params.light_body_hover_color",
-      "label": "(Light) Body Hover Color",
+      "label": "(Light) Body Hover",
       "type": "color"
     },
     {
       "field": "params.light_card_background_color",
-      "label": "(Light) Card Background Color",
+      "label": "(Light) Card Background",
       "type": "color"
     },
     {
       "field": "params.light_card_text_color",
-      "label": "(Light) Card Text Color",
+      "label": "(Light) Card Text",
       "type": "color"
     },
     {
       "field": "params.light_card_accent_color",
-      "label": "(Light) Card Accent Color",
+      "label": "(Light) Card Accent",
       "type": "color"
     },
     {
       "field": "params.light_card_hover_color",
-      "label": "(Light) Card Hover Color",
+      "label": "(Light) Card Hover",
       "type": "color"
     },
     {
@@ -125,27 +125,27 @@
     },
     {
       "field": "params.light_blockquote_color",
-      "label": "(Light) Blockquote Color",
+      "label": "(Light) Blockquote",
       "type": "color"
     },
     {
       "field": "params.light_blockquote_border",
-      "label": "(Light) Blockquote Border Color",
+      "label": "(Light) Blockquote Border",
       "type": "color"
     },
     {
       "field": "params.light_blockquote_text",
-      "label": "(Light) Blockquote Text Color",
+      "label": "(Light) Blockquote Text",
       "type": "color"
     },
     {
       "field": "params.light_meta_color",
-      "label": "(Light) Meta Color",
+      "label": "(Light) Meta",
       "type": "color"
     },
     {
       "field": "params.dark_body_background_color",
-      "label": "(Dark) Body Background Color",
+      "label": "(Dark) Body Background",
       "type": "color"
     },
     {
@@ -160,17 +160,17 @@
     },
     {
       "field": "params.dark_body_hover_color",
-      "label": "(Dark) Body Hover Color",
+      "label": "(Dark) Body Hover",
       "type": "color"
     },
     {
       "field": "params.dark_card_background_color",
-      "label": "(Dark) Card Background Color",
+      "label": "(Dark) Card Background",
       "type": "color"
     },
     {
       "field": "params.dark_card_text_color",
-      "label": "(Dark) Card Text Color",
+      "label": "(Dark) Card Text",
       "type": "color"
     },
     {
@@ -180,12 +180,12 @@
     },
     {
       "field": "params.dark_card_hover_color",
-      "label": "(Dark) Card Hover Color",
+      "label": "(Dark) Card Hover",
       "type": "color"
     },
     {
       "field": "params.dark_shadow_color",
-      "label": "(Dark) Shadow Color",
+      "label": "(Dark) Shadow",
       "type": "color"
     },
     {
@@ -200,17 +200,17 @@
     },
     {
       "field": "params.dark_blockquote_border",
-      "label": "(Dark) Blockquote Border Color",
+      "label": "(Dark) Blockquote Border",
       "type": "color"
     },
     {
       "field": "params.dark_blockquote_text",
-      "label": "(Dark) Blockquote Text Color",
+      "label": "(Dark) Blockquote Text",
       "type": "color"
     },
     {
       "field": "params.dark_meta_color",
-      "label": "(Dark) Meta Color",
+      "label": "(Dark) Meta",
       "type": "color"
     }
   ]

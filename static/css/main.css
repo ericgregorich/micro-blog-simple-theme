@@ -142,6 +142,11 @@ iframe {
   text-align: center;
 }
 
+a.site-header-title-link {
+  font-size: var(--font-size-title);
+  color: var(--body-text-color);
+}
+
 a.site-nav-link,
 a.site-nav-link:visited {
   font-size: var(--font-size-small);
@@ -155,11 +160,6 @@ a.site-nav-link:visited {
 
 a.site-nav-link:hover {
   color: var(--card-hover-color);
-}
-
-a.site-header-title-link {
-  font-size: var(--font-size-title);
-  color: var(--body-text-color);
 }
 
 /* ============================== Categories ============================== */
@@ -230,6 +230,7 @@ li.h-entry a,
 p.h-entry a,
 div.photos-grid-container a {
   color: var(--card-accent-color);
+  text-decoration: none;
 }
 
 li.post-list-item a:hover,
