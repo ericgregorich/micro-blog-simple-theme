@@ -34,26 +34,11 @@ h3 {
   font-size: 1.2rem;
 }
 
-.post-list-title {
-  text-align: center;
-}
-
-.post-meta {
-  font-size: var(--font-size-small);
-  display: flex;
-  justify-content: center;
-  font-weight: 600;
-}
-
-.post-meta span {
-  margin-right: 10px;
-}
-
 hr {
   border-top: 1px dashed var(--shadow-color);
 }
 
-/** Code */
+/* ============================== Code ============================== */
 pre {
   background-color: #272822;
   color: #f9f9f9;
@@ -101,7 +86,8 @@ iframe {
   flex-direction: column;
 }
 
-.site-header a,.site-header a:visited {
+.site-header a,
+.site-header a:visited {
   color: var(--body-accent-color);
   text-decoration: none;
 }
@@ -173,10 +159,14 @@ div.archive_categories p {
   margin: 5px;
 }
 
+div.archive_categories span {
+  margin-right: 15px;
+}
+
 div.archive_categories p a {
-  color: var(--body-text-color);
+  color: var(--card-text-color);
   margin-right: 5px;
-  background-color: var(--body-background-color);
+  background-color: var(--card-background-color);
   border: 1px solid var(--card-border-color);
   box-shadow: 0px 3px 5px 0px var(--shadow-color);
   font-size: var(--font-size-small);
@@ -186,14 +176,10 @@ div.archive_categories p a {
   text-decoration: none;
 }
 
-div.archive_categories span {
-  margin-right: 15px;
-}
-
 div.archive_categories p a:hover {
   color: var(--card-text-color);
-  background-color: var(--card-background-color);
-  border: 1px solid var(--card-hover-color);
+  background-color: var(--card-hover-color);
+
 }
 
 /* ============================== Site Content ============================== */
@@ -206,6 +192,21 @@ div.archive_categories p a:hover {
 .post-list {
   padding: 0px;
   margin: 0px;
+}
+
+.post-list-title {
+  text-align: center;
+}
+
+.post-meta {
+  font-size: var(--font-size-small);
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.post-meta span {
+  margin-right: 10px;
 }
 
 li.post-list-item,
@@ -265,11 +266,11 @@ a.post-list-item-date:hover {
 .post-list-item-date {
   display: block;
   text-align: center;
-  font-size: var(--font-size-small);
+  font-size: var(--font-size-normal);
 }
 
 a.post-list-item-date {
-  color: var(--font-color-secondary);
+  color: var(---meta-color);
 }
 
 /** Blockquotes */
@@ -337,7 +338,8 @@ blockquote {
   font-size: var(--font-size-small);
 }
 
-.site-footer a,.site-footer a:visited {
+.site-footer a,
+.site-footer a:visited {
   color: var(--body-accent-color);
 }
 
