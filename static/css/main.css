@@ -69,7 +69,16 @@ img {
   vertical-align: middle;
 }
 
-.post-content img {
+.post-list img {
+  display: block;
+  margin: auto;
+  margin-top: 15px;
+}
+
+article img {
+  display: block;
+  margin: auto;
+  margin-top: 15px;
   border-radius: 5px;
 }
 
@@ -78,19 +87,6 @@ iframe {
   display: block;
   margin: auto;
   max-width: 100%;
-}
-
-/* ============================== Links ============================== */
-a,
-a:visited {
-  color: var(--body-accent-color);
-  text-decoration: none;
-}
-
-a:hover,
-a.site-header-title-link:hover {
-  color: var(--body-accent-color);
-  text-decoration: none;
 }
 
 /* ============================== Site Header ============================== */
@@ -103,6 +99,15 @@ a.site-header-title-link:hover {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+}
+
+.site-header a,.site-header a:visited {
+  color: var(--body-accent-color);
+  text-decoration: none;
+}
+
+.site-header a:hover {
+  color: var(--body-hover-color);
 }
 
 .site-header-title,
@@ -145,12 +150,11 @@ a.site-nav-link:visited {
   padding: 0 5px;
   margin: 0px;
   margin-left: -4px;
-  text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 a.site-nav-link:hover {
-  color: var(--hover-color);
+  color: var(--card-hover-color);
 }
 
 a.site-header-title-link {
@@ -187,7 +191,7 @@ div.archive_categories span {
 
 div.archive_categories p a:hover {
   color: white;
-  background-color: var(--hover-color);
+  background-color: var(--card-hover-color);
   border: 1px solid var(--body-text-color);
 }
 
@@ -233,13 +237,7 @@ li.post-list-item a:hover,
 li.h-entry a:hover,
 p.h-entry a:hover,
 div.photos-grid-container a:hover {
-  color: var(--hover-color);
-}
-
-.post-list img {
-  display: block;
-  margin: auto;
-  margin-top: 15px;
+  color: var(--card-hover-color);
 }
 
 .post-header {
@@ -259,7 +257,7 @@ a.post-list-item-title {
 
 a.post-list-item-title:hover,
 a.post-list-item-date:hover {
-  color: var(--hover-color);
+  color: var(--card-hover-color);
 }
 
 .post-list-item-date {
@@ -337,16 +335,12 @@ blockquote {
   font-size: var(--font-size-small);
 }
 
-.rss-subscribe {
-  text-align: center;
-}
-
-.rss-subscribe a {
+.site-footer a,.site-footer a:visited {
   color: var(--body-accent-color);
 }
 
-.rss-subscribe a:hover {
-  color: var(--hover-color);
+.site-footer a:hover {
+  color: var(--body-hover-color);
 }
 
 /* ============================== Photos ============================== */
@@ -415,5 +409,5 @@ form button {
 
 .pagination .prev a:hover,
 .pagination .next a:hover {
-  color: var(--hover-color);
+  color: var(--card-hover-color);
 }
