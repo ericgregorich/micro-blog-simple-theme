@@ -24,7 +24,6 @@
     {{ $paginator := .Paginate (where .Site.Pages.ByDate.Reverse "Type" "post") (index .Site.Params "paginate" | default 20) }}
     {{ range $paginator.Pages }}
 
-    {{ $postDateTimeSys := .Date.Format "2020-12-23T15:21:54-05:00" }}
     {{ $postDateTime := .Date.Format "Jan 2, 2006" }}
     {{ if .Site.Params.showPostTimeOnIndex}}
 	    {{ $postDateTime = .Date.Format "Jan 2, 2006 3:04pm" }}
@@ -34,7 +33,7 @@
       {{ if .Site.Params.showFullPost }}
       <li class="post-list-item">
         <h1 class="p-name"><a href="{{ .Permalink }}" class="post-list-item-title">{{ .Title }}</a></h1>
-        <a href="{{ .Permalink }}" class="post-list-item-date"><span class="post-meta"><time class="dt-published" datetime="{{ $postDateTimeSys }}">{{ $postDateTime }}</time></span></a>
+        <a href="{{ .Permalink }}" class="post-list-item-date"><span class="post-meta"><time class="dt-published" datetime="{{ .Date | time.Format ":date_long" }}">{{ $postDateTime }}</time></span></a>
         <div class="post-list-item-content">
           {{ .Content }}
         </div>
@@ -42,7 +41,7 @@
       {{ else }}
       <li class="post-list-item">
         <h1 class="p-name"><a href="{{ .Permalink }}" class="post-list-item-title">{{ .Title }}</a></h1>
-        <a href="{{ .Permalink }}" class="post-list-item-date"><span class="post-meta"><time class="dt-published" datetime="{{ $postDateTimeSys }}">{{ $postDateTime }}</time></span></a>
+        <a href="{{ .Permalink }}" class="post-list-item-date"><span class="post-meta"><time class="dt-published" datetime="{{ .Date | time.Format ":date_long" }}">{{ $postDateTime }}</time></span></a>
         <div class="post-list-item-content">
           <p>{{ .Summary | truncate 300 }} <a href="{{ .Permalink }}" class="continue-link">read more</a></p>
         </div>
