@@ -296,13 +296,11 @@ blockquote {
 
 /* ============================== Response Options ============================== */
 .microblog_post {
-  margin-top: 20px;
   padding: 20px;
 }
 
 .response-options {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding: 20px;
   display: flex;
   justify-content: center;
   flex-direction: row;
