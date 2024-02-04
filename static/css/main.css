@@ -20,6 +20,7 @@ body {
   line-height: 1.5;
   background-color: var(--body-background-color);
   padding: 10px;
+  margin:0px;
 }
 
 h1 {
@@ -83,7 +84,6 @@ iframe {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  padding: 10px;
 }
 
 .site-header a,
@@ -155,22 +155,13 @@ div.archive_categories {
   justify-content: center;
 }
 
-div.archive_categories p {
-  margin: 5px;
-}
-
-div.archive_categories span {
-  margin-right: 15px;
-}
-
 div.archive_categories p a {
   color: var(--card-text-color);
-  margin-right: 5px;
   background-color: var(--card-background-color);
   border: 1px solid var(--card-border-color);
   font-size: var(--font-size-small);
   border-radius: 8px;
-  padding: 5px 8px 5px 8px;
+  padding: 8px;
   white-space: nowrap;
   text-decoration: none;
 }
