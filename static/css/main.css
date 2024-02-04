@@ -208,7 +208,6 @@ div.microblog_conversation {
   list-style: none;
   border-radius: 8px;
   padding: 30px;
-  margin-top: 25px;
   box-shadow: var(--shadow-color) 0px 30px 30px -50px,
     var(--shadow-color) 0px 30px 30px -30px;
   background-color: var(--card-background-color);

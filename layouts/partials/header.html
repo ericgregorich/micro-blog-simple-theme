@@ -1,11 +1,7 @@
 <header class="site-header">
   <div class="site-header-logo">
-    <a class="site-header-logo-link" href="/"
-      ><img
-        src="{{ .Site.Author.avatar }}"
-        class="site-image"
-        alt="{{ .Site.Title }}"
-    /></a>
+    <a class="site-header-logo-link" href="/"><img src="{{ .Site.Author.avatar }}" class="site-image"
+        alt="{{ .Site.Title }}" /></a>
   </div>
   <div class="site-header-content">
     <div class="site-header-row">
@@ -16,32 +12,28 @@
       <nav class="site-nav">
         <div class="site-nav-trigger">
           {{ range .Site.Menus.main }} {{ if .Page.Params.redirect }}
-          <a class="site-nav-link" href="{{ .Page.Params.redirect }}"
-            >{{ .Name }}</a
-          >
+          <a class="site-nav-link" href="{{ .Page.Params.redirect }}">{{ .Name }}</a>
           {{ else }}
-          <a class="site-nav-link" href="{{ .URL | relLangURL | safeURL }}"
-            >{{ .Name }}</a
-          >
+          <a class="site-nav-link" href="{{ .URL | relLangURL | safeURL }}">{{ .Name }}</a>
           {{ end }} {{ end }}
         </div>
       </nav>
-      {{ if .Site.Params.showPostCategories}}
+    </div>
 
-  {{ $list := ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
-  {{ if gt (len $list) 0 }}
-    {{ if .Site.Params.sortTags }}
-      {{ $list = sort $list "Title" }}
-    {{ end }}
-
-    <div class="archive_categories">
-      {{ range $list }}
-        <p><a href="{{ .Permalink }}">{{ .Title }}</a></p>
+    {{ if .Site.Params.showPostCategories}}
+      {{ $list := ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
+      {{ if gt (len $list) 0 }}
+          {{ if .Site.Params.sortTags }}
+            {{ $list = sort $list "Title" }}
+          {{ end }}
+          <div class="site-header-row">
+            <div class="archive_categories">
+              {{ range $list }}
+              <p><a href="{{ .Permalink }}">{{ .Title }}</a></p>
+              {{ end }}
+            </div>
+          </div>
       {{ end }}
-    </div>
-  {{ end }}
-
-{{ end }}
-    </div>
+    {{ end }}
   </div>
 </header>
