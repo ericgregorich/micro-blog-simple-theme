@@ -76,10 +76,10 @@ iframe {
 
 /* ============================== Site Header ============================== */
 .site-header {
-  margin-top: 20px;
   max-width: var(--width-max);
   min-width: var(--width-min);
   margin: auto;
+  padding:20px;
   text-align: center;
   display: flex;
   justify-content: space-between;
@@ -153,6 +153,7 @@ div.archive_categories {
   display: flex;
   flex-flow: wrap;
   justify-content: center;
+  padding: 20px;
 }
 
 div.archive_categories p {
@@ -267,18 +268,16 @@ a.post-list-item-date {
   font-size: var(--font-size-small);
   display: flex;
   justify-content: center;
-  font-weight: 500;
-  padding: 10px;
+  font-weight: 600;
   flex-direction: row;
-}
-
-.post-meta span {
-  margin-right: 10px;
+  padding: 0 10px 10px 10px;
+  gap: 20px;
 }
 
 @media (max-width: 500px) {
   .post-meta {
     flex-direction: column;
+    gap: 5px;
   }
 }
 
@@ -341,9 +340,10 @@ blockquote {
 .site-footer {
   max-width: var(--width-max);
   min-width: var(--width-min);
-  margin: auto;
   text-align: center;
   font-size: var(--font-size-small);
+  margin: auto;
+  padding: 20px;
 }
 
 .site-footer a,
