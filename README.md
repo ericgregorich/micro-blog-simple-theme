@@ -15,17 +15,30 @@ Cards is a simple and lightweight theme for Micro.blog.
 - An option to show the time in addition to the date for each post.
 - And more features.
 
-**Check out the [Cards Theme site](https://cards.ericgregorich.com) for more features, change long, and examples.**
 
 !["Card Theme Samples"](https://raw.githubusercontent.com/ericgregorich/micro-blog-cards-theme/master/screenshot.png)
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/M4M0DLOZR)
 
 ## Support
-If you have any issues, you can either create an issue on [GitHub](https://github.com/ericgregorich/micro-blog-cards-theme/issues), or send me an email using the form on the bottom right corner of the [Cards Theme](https://cards.ericgregorich.com) page.
+If you have any issues, you can either create an issue on [GitHub](https://github.com/ericgregorich/micro-blog-cards-theme/issues), or send me an [email](https://ericgregorich.com/email).
 
 ## Change Log
-The [Change Log](https://cards.ericgregorich.com/#changelog) has been moved to the new [Cards Theme](https://cards.ericgregorich.com) home page..
+For changes to the theme, follow my blog, specifically the [Cards Theme](https://cards.ericgregorich.com) category.
 
-## Instructions
-You can find [installation and upgrade instructions](https://cards.ericgregorich.com/#install) on the [Cards Theme](https://cards.ericgregorich.com) home page.
+## Installation Instructions
+
+-  Open the Cards Theme plugin from this [link](https://micro.blog/account/plugins/view/82){:target="_blank"}.
+-  Select your site from the dropdown and click the `Install` button.
+-  Browse to your plugin page and click the `Settings` button on the Cards Theme plugin.
+-  Update your settings and click `Update Settings` to save your changes. 
+- Check you site (it may take a few minutes).
+
+## Update Instructions
+
+-  Browse your Micro.blog plugins page.
+-  If there is a new version of the Cards Theme available, you will see a notice and an Upgrade button.  
+  ![Cards Theme Upgrade](https://ericgregorich.com/uploads/2024/cards-theme-upgrade.png)
+-  Click the `Upgrade` button.
+-  Check your plugin settings.
+-  Enjoy!
