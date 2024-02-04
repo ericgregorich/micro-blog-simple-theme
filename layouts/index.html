@@ -25,6 +25,7 @@
     {{ range $paginator.Pages }}
 
     {{ $postDateTimeSys :=  .Date | time.Format ":date_long"  }}
+    {{ $postDateTime := .Date.Format "Jan 2, 2006" }}
     {{ if .Site.Params.showPostTimeOnIndex}}
 	    {{ $postDateTime = .Date.Format "Jan 2, 2006 3:04pm" }}
     {{ end }}
