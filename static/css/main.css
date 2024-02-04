@@ -19,7 +19,7 @@ body {
   color: var(--body-text-color);
   line-height: 1.5;
   background-color: var(--body-background-color);
-  padding:10px;
+  padding: 10px;
 }
 
 h1 {
@@ -83,7 +83,7 @@ iframe {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  padding:10px;
+  padding: 10px;
 }
 
 .site-header a,
@@ -185,6 +185,10 @@ div.archive_categories p a:hover {
   max-width: var(--width-max);
   min-width: var(--width-min);
   margin: auto;
+}
+
+.post {
+  margin-bottom: 40px;
 }
 
 .post-list {
