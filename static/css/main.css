@@ -113,6 +113,10 @@ iframe {
   order: 2;
 }
 
+.site-header-row {
+  padding: 10px;
+}
+
 /* ============================== Site Nav ============================== */
 .site-nav {
   max-width: var(--width-max);
@@ -193,7 +197,7 @@ div.photos-grid-container,
 div.microblog_conversation {
   list-style: none;
   border-radius: 8px;
-  padding: 30px;
+  padding: 25px;
   box-shadow: var(--shadow-color) 0px 30px 30px -50px,
     var(--shadow-color) 0px 30px 30px -30px;
   background-color: var(--card-background-color);
@@ -314,6 +318,14 @@ blockquote {
 
 .site-image {
   border-radius: 50px;
+}
+
+.microblog_conversation a {
+  color: var(--card-accent-color);
+}
+
+.microblog_conversation a:hover {
+  color: var(--card-hover-color);
 }
 
 @media (max-width: 500px) {
