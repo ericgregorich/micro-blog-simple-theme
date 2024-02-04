@@ -424,6 +424,8 @@ form button {
 .pagination .prev a,
 .pagination .next a {
   color: var(--card-accent-color);
+  text-decoration: none;
+  font-weight: 600px;
 }
 
 .pagination .prev a:hover,
