@@ -83,6 +83,7 @@ iframe {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  padding:10px;
 }
 
 .site-header a,
@@ -410,11 +411,19 @@ form button {
 .pagination {
   text-align: center;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
-.pagination .prev,
-.pagination .next {
-  padding: 30px;
+.post-nav {
+  display: flex;
+  margin: auto;
+  gap: 30px;
+}
+
+.pagination .prev a,
+.pagination .next a {
+  color: var(--card-accent-color);
 }
 
 .pagination .prev a:hover,
