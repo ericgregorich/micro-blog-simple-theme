@@ -15,17 +15,17 @@
     },
     {
       "field": "params.showPostTimeOnSingle",
-      "label": "Include both time and date, on Post?",
+      "label": "Include both time and date on each post?",
       "type": "boolean"
     },
     {
       "field": "params.showPostTimeOnIndex",
-      "label": "Include both time and date, on Home?",
+      "label": "Include both time and date on home?",
       "type": "boolean"
     },
     {
       "field": "params.showPostTimeOnArchive",
-      "label": "Include both time and date, on Archive?",
+      "label": "Include both time and date on archive?",
       "type": "boolean"
     },
     {
@@ -35,12 +35,7 @@
     },
     {
       "field": "params.showPostCategories",
-      "label": "Show Post Categories?",
-      "type": "boolean"
-    },
-    {
-      "field": "params.showTagsHome",
-      "label": "Show Categories in Navigation?",
+      "label": "Show post categories in header?",
       "type": "boolean"
     },
     {

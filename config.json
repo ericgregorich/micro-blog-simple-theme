@@ -35,7 +35,6 @@
     "showPostTimeOnArchive": true,
     "showPostCategories": true,
     "showTinylyticsKudos": false,
-    "showTagsHome": true,
     "paginate": 20,
     "sortTags": true,
     "paginate_categories": true,
