@@ -343,6 +343,7 @@ blockquote {
 .site-footer a,
 .site-footer a:visited {
   color: var(--body-accent-color);
+  text-decoration: none;
 }
 
 .site-footer a:hover {
