@@ -110,14 +110,7 @@ iframe {
 }
 
 .site-header-content {
-  text-align: left;
-  width: 100%;
   order: 2;
-  text-align: center;
-}
-
-.site-header-row {
-  margin-bottom: 5px;
 }
 
 /* ============================== Site Nav ============================== */
@@ -153,6 +146,7 @@ div.archive_categories {
   display: flex;
   flex-flow: wrap;
   justify-content: center;
+  gap: 6px;
 }
 
 div.archive_categories p a {
@@ -161,9 +155,10 @@ div.archive_categories p a {
   border: 1px solid var(--card-border-color);
   font-size: var(--font-size-small);
   border-radius: 8px;
-  padding: 8px;
+  padding: 6px;
   white-space: nowrap;
   text-decoration: none;
+  margin: 0px;
 }
 
 div.archive_categories p a:hover {
