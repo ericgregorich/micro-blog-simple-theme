@@ -28,7 +28,7 @@ For changes to the theme, follow my blog, specifically the [Cards Theme](https:/
 
 ## Installation Instructions
 
--  Open the Cards Theme plugin from this [link](https://micro.blog/account/plugins/view/82){:target="_blank"}.
+-  Open the Cards Theme plugin from this [link](https://micro.blog/account/plugins/view/82).
 -  Select your site from the dropdown and click the `Install` button.
 -  Browse to your plugin page and click the `Settings` button on the Cards Theme plugin.
 -  Update your settings and click `Update Settings` to save your changes. 
