@@ -15,6 +15,8 @@ Cards is a simple and lightweight theme for Micro.blog.
 - An option to show the time in addition to the date for each post.
 - And more features.
 
+**Check out the [Cards Theme site](https://cards.ericgregorich.com) for more features, change long, and examples.**
+
 !["Card Theme Samples"](https://raw.githubusercontent.com/ericgregorich/micro-blog-cards-theme/master/screenshot.png)
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/M4M0DLOZR)
