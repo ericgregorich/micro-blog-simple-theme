@@ -446,3 +446,10 @@ form button {
 .pagination .next a:hover {
   color: var(--card-hover-color);
 }
+
+
+/* ============================== Bigfoot Overrides ============================== */
+.bigfoot-footnote__content {
+  background: var(--body-background-color) !important;
+  color: var(--body-text-color);
+}
