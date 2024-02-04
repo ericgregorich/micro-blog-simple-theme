@@ -18,10 +18,10 @@
 	{{ $list := (where .Site.Pages "Type" "post") }}
 	{{ range $list }}
 
-	{{ $postDateTimeSys :=  .Date | time.Format ":date_long"  }}
-    {{ $postDateTime := .Date.Format "Jan 2, 2006" }}
+	{{ $postDateTimeSys :=  .Date.Format "2006-01-02T15:04:00Z" }}
+    {{ $postDateTime := .Date.Format "January 2, 2006" }}
     {{ if .Site.Params.showPostTimeOnIndex}}
-	    {{ $postDateTime = .Date.Format "Jan 2, 2006 3:04pm" }}
+	    {{ $postDateTime = .Date.Format "January 2, 2006 3:04pm" }}
     {{ end }}
 
 		<p class="h-entry">
