@@ -79,7 +79,6 @@ iframe {
   max-width: var(--width-max);
   min-width: var(--width-min);
   margin: auto;
-  padding:20px;
   text-align: center;
   display: flex;
   justify-content: space-between;
@@ -188,6 +187,9 @@ div.archive_categories p a:hover {
 }
 
 .post-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
   padding: 0px;
   margin: 0px;
 }
@@ -407,7 +409,7 @@ form button {
 /* ============================== Pagination ============================== */
 .pagination {
   text-align: center;
-  padding: 30px 0px 10px 0px;
+  padding: 20px;
 }
 
 .pagination .prev,
