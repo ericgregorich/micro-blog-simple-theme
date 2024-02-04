@@ -187,10 +187,6 @@ div.archive_categories p a:hover {
   margin: auto;
 }
 
-.post {
-  margin-bottom: 40px;
-}
-
 .post-list {
   display: flex;
   flex-direction: column;
@@ -217,6 +213,7 @@ div.microblog_conversation {
   background-color: var(--card-background-color);
   color: var(--card-text-color);
   border: 1px solid var(--card-border-color);
+  margin-bottom: 20px;
 }
 
 li.post-list-item a,
