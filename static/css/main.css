@@ -318,6 +318,7 @@ blockquote {
 
 .microblog_conversation a {
   color: var(--card-accent-color);
+  text-decoration: none;
 }
 
 .microblog_conversation a:hover {
