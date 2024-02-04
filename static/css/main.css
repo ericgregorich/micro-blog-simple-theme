@@ -19,7 +19,7 @@ body {
   color: var(--body-text-color);
   line-height: 1.5;
   background-color: var(--body-background-color);
-  margin-top: 30px;
+  padding:10px;
 }
 
 h1 {
@@ -153,7 +153,6 @@ div.archive_categories {
   display: flex;
   flex-flow: wrap;
   justify-content: center;
-  padding: 20px;
 }
 
 div.archive_categories p {
