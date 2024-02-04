@@ -415,7 +415,7 @@ form button {
   flex-direction: column;
 }
 
-.post-nav {
+#post-nav {
   display: flex;
   margin: auto;
   gap: 30px;
