@@ -198,17 +198,6 @@ div.archive_categories p a:hover {
   text-align: center;
 }
 
-.post-meta {
-  font-size: var(--font-size-small);
-  display: flex;
-  justify-content: center;
-  font-weight: 600;
-}
-
-.post-meta span {
-  margin-right: 10px;
-}
-
 li.post-list-item,
 .post,
 li.h-entry,
@@ -273,7 +262,27 @@ a.post-list-item-date {
   color: var(---meta-color);
 }
 
-/** Blockquotes */
+/* ============================== Post Meta ============================== */
+.post-meta {
+  font-size: var(--font-size-small);
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  padding: 10px;
+  flex-direction: row;
+}
+
+.post-meta span {
+  margin-right: 10px;
+}
+
+@media (max-width: 500px) {
+  .post-meta {
+    flex-direction: column;
+  }
+}
+
+/* ============================== Blockquotes ============================== */
 blockquote {
   border-left: 4px solid var(--blockquote-border);
   border-right: 4px solid var(--blockquote-border);
@@ -287,13 +296,12 @@ blockquote {
   margin-right: 0px;
 }
 
-/** Conversation */
+/* ============================== Response Options ============================== */
 .microblog_post {
   margin-top: 20px;
   padding: 20px;
 }
 
-/* ============================== Response Options ============================== */
 .response-options {
   margin-top: 30px;
   margin-bottom: 30px;
