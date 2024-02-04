@@ -113,10 +113,6 @@ iframe {
   order: 2;
 }
 
-.site-header-row {
-  padding: 10px;
-}
-
 /* ============================== Site Nav ============================== */
 .site-nav {
   max-width: var(--width-max);
