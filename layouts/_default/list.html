@@ -1,74 +1,94 @@
 {{ define "main" }}
 
-{{ if .Site.Params.showTagsHome}}
+<div class="post-list-title">
+	<h1>{{ .Title }}</h1>
+</div>
+{{ if .Site.Params.show_category_rss }}
+<div class="post-list-rss">
+	<a href="{{ .Permalink }}feed.xml">
+		<svg xmlns="http://www.w3.org/2000/svg" id="RSSicon" viewBox="0 0 8 8" width="25" height="25">
 
-  {{ $list := ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
-  {{ if gt (len $list) 0 }}
-	
-    {{/* Sort the categories, if parameter is TRUE */}}
-    {{ if .Site.Params.sortTags }}
-      {{ $list = sort $list "Title" }}
-    {{ end }}
-	
-    <div class="archive_categories">
-      {{ range $list }}
-        <p><a href="{{ .Permalink }}">{{ .Title }}</a></p>
-      {{ end }}
-    </div>
-  {{ end }}
+			<title>The RSS feed for {{ .Title }}.</title>
+
+			<style type="text/css">
+				.button {
+					stroke: none;
+					fill: orange;
+				}
+
+				.symbol {
+					stroke: none;
+					fill: white;
+				}
+			</style>
+
+			<rect class="button" width="8" height="8" rx="1.5" />
+			<circle class="symbol" cx="2" cy="6" r="1" />
+			<path class="symbol" d="m 1,4 a 3,3 0 0 1 3,3 h 1 a 4,4 0 0 0 -4,-4 z" />
+			<path class="symbol" d="m 1,2 a 5,5 0 0 1 5,5 h 1 a 6,6 0 0 0 -6,-6 z" />
+
+		</svg>
+
+</div>
+</a>
 
 {{ end }}
 
-<div class="post-list-title"><h1>{{ .Title }}</h1></div>
+
 <div class="home h-feed">
-  <ul class="post-list">
-	{{ $paginator := .Paginate (where .Pages.ByDate.Reverse "Type" "post") (index .Site.Params "paginate" | default 20) }}
-	{{ range $paginator.Pages  }}
+	<ul class="post-list">
+		{{ $paginator := .Paginate (where .Pages.ByDate.Reverse "Type" "post") (index .Site.Params "paginate" | default
+		20) }}
+		{{ range $paginator.Pages }}
 
-	{{/* Get the display version of the Date/Time for the post */}}
-	{{ $postDateTime := .Date.Format "Jan 2, 2006" }}
-	{{ if .Site.Params.showPostTimeOnArchive}}
-		{{ $postDateTime = .Date.Format "Jan 2, 2006 at 3:04pm" }}
-	{{ end }}
+		{{ $postDateTimeSys := .Date.Format "2006-01-02T15:04:00Z" }}
+		{{ $postDateTime := .Date.Format "January 2, 2006" }}
+		{{ if .Site.Params.showPostTimeOnIndex}}
+		{{ $postDateTime = .Date.Format "January 2, 2006 3:04pm" }}
+		{{ end }}
 
-	{{ if .Title }}
-	{{ if .Site.Params.showFullPost }}
-	<li class="post-list-item">
-	  <h1><a href="{{ .Permalink }}" class="post-list-item-title">{{ .Title }}</a></h1>
-	  <a href="{{ .Permalink }}" class="post-list-item-date"><span class="post-meta"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ $postDateTime }}</time></span></a>
-	  <div class="post-list-item-content">
-		{{ .Content }}
-	  </div>
-	</li>
-	{{ else }}
-	<li class="post-list-item">
-	  <h1><a href="{{ .Permalink }}" class="post-list-item-title">{{ .Title }}</a></h1>
-	  <a href="{{ .Permalink }}" class="post-list-item-date"><span class="post-meta"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ $postDateTime }}</time></span></a>
-	  <div class="post-list-item-content">
-		<p>{{ .Summary | truncate 300 }} <a href="{{ .Permalink }}" class="continue-link">read more</a></p>
-	  </div>
-	</li>
-	{{ end }}
-  {{ else }}
-	<li class="post-list-item">
-	  <a href="{{ .Permalink }}" class="post-list-item-date"><span class="post-meta"><time class="dt-published"
-			datetime="{{ .Date.Format " 2006-01-02 15:04:05 -0700" }}">{{ $postDateTime }}</time></span></a>
-	  <div class="post-list-item-content">
-		{{ .Content }}
-	  </div>
-	</li>
-  {{ end }}
-    {{ end }}
-  </ul>
+		{{ if .Title }}
+		{{ if .Site.Params.showFullPost }}
+		<li class="post-list-item">
+			<h1><a href="{{ .Permalink }}" class="post-list-item-title">{{ .Title }}</a></h1>
+			<a href="{{ .Permalink }}" class="post-list-item-date"><span class="post-meta"><time
+						class="post-list-item-date dt-published" datetime="{{ $postDateTimeSys }}">{{ $postDateTime
+						}}</time></span></a>
+			<div class="post-list-item-content">
+				{{ .Content }}
+			</div>
+		</li>
+		{{ else }}
+		<li class="post-list-item">
+			<h1><a href="{{ .Permalink }}" class="post-list-item-title">{{ .Title }}</a></h1>
+			<a href="{{ .Permalink }}" class="post-list-item-date"><span class="post-meta"><time
+						class="post-list-item-date dt-published" datetime="{{ $postDateTimeSys }}">{{ $postDateTime
+						}}</time></span></a>
+			<div class="post-list-item-content">
+				<p>{{ .Summary | truncate 300 }} <a href="{{ .Permalink }}" class="continue-link">read more</a></p>
+			</div>
+		</li>
+		{{ end }}
+		{{ else }}
+		<li class="post-list-item">
+			<a href="{{ .Permalink }}" class="post-list-item-date"><span class="post-meta"><time class="dt-published"
+						datetime="{{ .Date.Format " 2006-01-02 15:04:05 -0700" }}">{{ $postDateTime }}</time></span></a>
+			<div class="post-list-item-content">
+				{{ .Content }}
+			</div>
+		</li>
+		{{ end }}
+		{{ end }}
+	</ul>
 
 </div>
 <div class="pagination">
-{{ if .IsHome }}
+	{{ if .IsHome }}
 	{{ if .Site.Params.paginate_home }}
-		{{ partial "pagination" . }}
-	{{ end }}
-{{ else if .Site.Params.paginate_categories }}
 	{{ partial "pagination" . }}
-{{ end }}
+	{{ end }}
+	{{ else if .Site.Params.paginate_categories }}
+	{{ partial "pagination" . }}
+	{{ end }}
 </div>
 {{ end }}

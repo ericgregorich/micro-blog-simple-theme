@@ -49,6 +49,11 @@
       "type": "boolean"
     },
     {
+      "field": "params.show_category_rss",
+      "label": "Show RSS Link on category page?",
+      "type": "boolean"
+    },
+    {
       "field": "params.paginate_home",
       "label": "Enable pagination on home page?",
       "type": "boolean"

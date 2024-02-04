@@ -3,7 +3,7 @@
   --font-family: '__inter_5b82ff', '__inter_Fallback_5b82ff', Inter,
     ui-sans-serif, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
     'Segoe UI Symbol', 'Noto Color Emoji', system-ui;
-  --font-size-normal:1.1rem;
+  --font-size-normal: 1.1rem;
   --font-size-small: 0.9rem;
   --font-size-large: 1.3rem;
   --font-size-title: 1.4rem;
@@ -20,7 +20,7 @@ body {
   line-height: 1.5;
   background-color: var(--body-background-color);
   padding: 10px;
-  margin:0px;
+  margin: 0px;
 }
 
 h1 {
@@ -104,7 +104,7 @@ iframe {
 .site-header-title,
 .site-nav-link {
   padding: 10px;
-  
+
 }
 
 .site-header-row {
@@ -262,6 +262,11 @@ a.post-list-item-date {
   flex-direction: row;
   padding: 0 10px 10px 10px;
   gap: 20px;
+}
+
+.post-list-rss {
+  text-align: center;
+  padding-bottom: 10px;
 }
 
 @media (max-width: 500px) {
