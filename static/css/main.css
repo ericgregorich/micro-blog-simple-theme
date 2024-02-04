@@ -342,7 +342,6 @@ blockquote {
   text-align: center;
   font-size: var(--font-size-small);
   margin: auto;
-  padding: 20px;
 }
 
 .site-footer a,
@@ -352,6 +351,10 @@ blockquote {
 
 .site-footer a:hover {
   color: var(--body-hover-color);
+}
+
+.tinylytics_webring {
+  text-decoration: none;
 }
 
 /* ============================== Photos ============================== */
@@ -413,6 +416,7 @@ form button {
   padding: 20px;
   display: flex;
   flex-direction: column;
+  font-weight: 800;
 }
 
 #post-nav {
