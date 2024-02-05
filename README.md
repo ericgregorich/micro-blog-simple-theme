@@ -24,7 +24,7 @@ Cards is a simple and lightweight theme for Micro.blog.
 If you have any issues, you can either create an issue on [GitHub](https://github.com/ericgregorich/micro-blog-cards-theme/issues), or send me an [email](https://ericgregorich.com/email).
 
 ## Change Log
-For changes to the theme, follow my blog, specifically the [Cards Theme](https://cards.ericgregorich.com) category.
+For changes to the theme, follow my blog, specifically the [Cards Theme](https://ericgregorich.com/categories/cards-theme) category.
 
 ## Installation Instructions
 

@@ -1,5 +1,5 @@
 {
-  "version": "1.8",
+  "version": "1.8.1",
   "title": "Cards Theme",
   "description": "A simple and customizable Micro.blog theme.",
   "fields": [
@@ -95,22 +95,22 @@
     },
     {
       "field": "params.light_card_background_color",
-      "label": "(Light) Card Background",
+      "label": "(Light) Card and Category Background",
       "type": "color"
     },
     {
       "field": "params.light_card_text_color",
-      "label": "(Light) Card Text",
+      "label": "(Light) Card and Category Text",
       "type": "color"
     },
     {
       "field": "params.light_card_accent_color",
-      "label": "(Light) Card Accent",
+      "label": "(Light) Card and Category Accent",
       "type": "color"
     },
     {
       "field": "params.light_card_hover_color",
-      "label": "(Light) Card Hover",
+      "label": "(Light) Card and Category Hover",
       "type": "color"
     },
     {
@@ -165,22 +165,22 @@
     },
     {
       "field": "params.dark_card_background_color",
-      "label": "(Dark) Card Background",
+      "label": "(Dark) Card and Category Background",
       "type": "color"
     },
     {
       "field": "params.dark_card_text_color",
-      "label": "(Dark) Card Text",
+      "label": "(Dark) Card and Category Text",
       "type": "color"
     },
     {
       "field": "params.dark_card_accent_color",
-      "label": "(Dark) Card Accent",
+      "label": "(Dark) Card and Category Accent",
       "type": "color"
     },
     {
       "field": "params.dark_card_hover_color",
-      "label": "(Dark) Card Hover",
+      "label": "(Dark) Card and Category Hover",
       "type": "color"
     },
     {
