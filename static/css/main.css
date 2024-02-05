@@ -203,7 +203,7 @@ div.microblog_conversation {
   background-color: var(--card-background-color);
   color: var(--card-text-color);
   border: 1px solid var(--card-border-color);
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 li.post-list-item a,
