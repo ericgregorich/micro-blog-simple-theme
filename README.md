@@ -26,19 +26,5 @@ If you have any issues, you can either create an issue on [GitHub](https://githu
 ## Change Log
 For changes to the theme, follow my blog, specifically the [Cards Theme](https://ericgregorich.com/categories/cards-theme) category.
 
-## Installation Instructions
-
--  Open the Cards Theme plugin from this [link](https://micro.blog/account/plugins/view/82).
--  Select your site from the dropdown and click the `Install` button.
--  Browse to your plugin page and click the `Settings` button on the Cards Theme plugin.
--  Update your settings and click `Update Settings` to save your changes. 
-- Check you site (it may take a few minutes).
-
-## Update Instructions
-
--  Browse your Micro.blog plugins page.
--  If there is a new version of the Cards Theme available, you will see a notice and an Upgrade button.  
-  ![Cards Theme Upgrade](https://ericgregorich.com/uploads/2024/cards-theme-upgrade.png)
--  Click the `Upgrade` button.
--  Check your plugin settings.
--  Enjoy!
+## Instructions
+Installation, upgrade, troubleshooting, and other details can be found on the [Cards Theme](https://cards.ericgregorich.com) landing page. 
