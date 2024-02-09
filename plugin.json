@@ -5,7 +5,7 @@
   "fields": [
     {
       "field": "params.headertext",
-      "label": "Description to show in your header.",
+      "label": "Description to show in your header",
       "type": "text"
     },
     {
