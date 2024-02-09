@@ -264,11 +264,6 @@ a.post-list-item-date {
   gap: 20px;
 }
 
-.post-list-rss {
-  text-align: center;
-  padding-bottom: 10px;
-}
-
 @media (max-width: 500px) {
   .post-meta {
     flex-direction: column;
