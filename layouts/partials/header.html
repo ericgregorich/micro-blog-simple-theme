@@ -19,7 +19,28 @@
     </nav>
   </div>
 
-  {{ if .Site.Params.showPostCategories}}
+  {{ $.Scratch.Set "showCategories" false }}
+  {{ if and .IsHome .Site.Params.showCategoriesOnHomepage }}
+    {{/* We want to show categories on the home page */}}
+    {{ $.Scratch.Set "showCategories" true }}
+  {{ else if eq .Type "post" }}
+    {{ if .Site.Params.showCategoriesOnPost }}
+      {{/* We want to show categories on post page */}}
+      {{ $.Scratch.Set "showCategories" true }}
+    {{ end }}
+  {{ else if strings.HasPrefix .RelPermalink "/archive" }}
+    {{ if .Site.Params.showCategoriesOnArchive }}
+      {{/* We want to show categories on archive page */}}
+      {{ $.Scratch.Set "showCategories" true }}
+    {{ end }}
+  {{ else if strings.HasPrefix .RelPermalink "/categories" }}
+    {{ if .Site.Params.showCategoriesOnCategory }}
+      {{/* We want to show categories on category page(s) aka, the sub-archive pages */}}
+      {{ $.Scratch.Set "showCategories" true }}
+    {{ end }}
+  {{ end }}
+
+  {{ if $.Scratch.Get "showCategories" }}
     {{ $list := ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
     {{ if gt (len $list) 0 }}
         {{ if .Site.Params.sortTags }}

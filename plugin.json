@@ -1,5 +1,5 @@
 {
-  "version": "1.8.1",
+  "version": "1.8.2",
   "title": "Cards Theme",
   "description": "A simple and customizable Micro.blog theme.",
   "fields": [
@@ -34,8 +34,28 @@
       "type": "boolean"
     },
     {
+      "field": "params.showCategoriesOnPost",
+      "label": "Show categories on the post page?",
+      "type": "boolean"
+    },
+    {
+      "field": "params.showCategoriesOnArchive",
+      "label": "Show categories on the archive page?",
+      "type": "boolean"
+    },
+    {
+      "field": "params.showCategoriesOnCategory",
+      "label": "Show categories on sub-archive page(s)?",
+      "type": "boolean"
+    },
+    {
+      "field": "params.showCategoriesOnHomepage",
+      "label": "Show categories on the homepage?",
+      "type": "boolean"
+    },
+    {
       "field": "params.showPostCategories",
-      "label": "Show post categories in header?",
+      "label": "Show categories of the post?",
       "type": "boolean"
     },
     {
