@@ -45,7 +45,7 @@
     },
     {
       "field": "params.showCategoriesOnCategory",
-      "label": "Show categories on sub-archive page(s)?",
+      "label": "Show categories on category archive page?",
       "type": "boolean"
     },
     {
