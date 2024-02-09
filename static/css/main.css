@@ -147,11 +147,10 @@ div.archive_categories {
   justify-content: center;
   flex-flow: wrap;
   gap: 6px;
-  margin: 0 0 10px 0;
 }
 
 div.archive_categories p {
-  margin: 0px;
+  margin: 0 0 10px 0;
 }
 
 div.archive_categories p a {
