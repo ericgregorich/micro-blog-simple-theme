@@ -1,12 +1,7 @@
 {{ define "main" }}
 
 {{ if .Site.Params.showCategoriesOnCategory }}
-      {{/* We want to show categories on category page(s) aka, the sub-archive pages */}}
-      {{ $.Scratch.Set "showCategories" true }}
-    {{ end }}
-
-	{{ if $.Scratch.Get "showCategories" }}
-  {{ $list := ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
+      {{ $list := ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
   {{ if gt (len $list) 0 }}
   {{ if .Site.Params.sortTags }}
   {{ $list = sort $list "Title" }}
@@ -17,7 +12,7 @@
     {{ end }}
   </div>
   {{ end }}
-  {{ end }}
+    {{ end }}
 
 <div class="post-list-title">
 	<h1>{{ .Title }}</h1>
