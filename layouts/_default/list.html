@@ -1,5 +1,10 @@
 {{ define "main" }}
 
+{{ if .Site.Params.showCategoriesOnCategory }}
+      {{/* We want to show categories on category page(s) aka, the sub-archive pages */}}
+      {{ $.Scratch.Set "showCategories" true }}
+    {{ end }}
+
 <div class="post-list-title">
 	<h1>{{ .Title }}</h1>
 </div>

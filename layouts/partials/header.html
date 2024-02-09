@@ -12,45 +12,40 @@
   <div class="site-header-row">
     <nav class="site-nav">
       {{ range .Site.Menus.main }} {{ if .Page.Params.redirect }}
-        <a class="site-nav-link" href="{{ .Page.Params.redirect }}">{{ .Name }}</a>
-        {{ else }}
-        <a class="site-nav-link" href="{{ .URL | relLangURL | safeURL }}">{{ .Name }}</a>
-        {{ end }} {{ end }}
+      <a class="site-nav-link" href="{{ .Page.Params.redirect }}">{{ .Name }}</a>
+      {{ else }}
+      <a class="site-nav-link" href="{{ .URL | relLangURL | safeURL }}">{{ .Name }}</a>
+      {{ end }} {{ end }}
     </nav>
   </div>
 
   {{ $.Scratch.Set "showCategories" false }}
-  {{ if and .IsHome .Site.Params.showCategoriesOnHomepage }}
-    {{/* We want to show categories on the home page */}}
-    {{ $.Scratch.Set "showCategories" true }}
-  {{ else if eq .Type "post" }}
-    {{ if .Site.Params.showCategoriesOnPost }}
+    {{ if and .IsHome .Site.Params.showCategoriesOnHomepage }}
+      {{/* We want to show categories on the home page */}}
+      {{ $.Scratch.Set "showCategories" true }}
+    {{ else if eq .Type "post" }}
+      {{ if .Site.Params.showCategoriesOnPost }}
       {{/* We want to show categories on post page */}}
       {{ $.Scratch.Set "showCategories" true }}
     {{ end }}
-  {{ else if strings.HasPrefix .RelPermalink "/archive" }}
+    {{ else if strings.HasPrefix .RelPermalink "/archive" }}
     {{ if .Site.Params.showCategoriesOnArchive }}
       {{/* We want to show categories on archive page */}}
-      {{ $.Scratch.Set "showCategories" true }}
-    {{ end }}
-  {{ else if strings.HasPrefix .RelPermalink "/categories" }}
-    {{ if .Site.Params.showCategoriesOnCategory }}
-      {{/* We want to show categories on category page(s) aka, the sub-archive pages */}}
       {{ $.Scratch.Set "showCategories" true }}
     {{ end }}
   {{ end }}
 
   {{ if $.Scratch.Get "showCategories" }}
-    {{ $list := ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
-    {{ if gt (len $list) 0 }}
-        {{ if .Site.Params.sortTags }}
-          {{ $list = sort $list "Title" }}
-        {{ end }}
-        <div class="site-header-row archive_categories">
-          {{ range $list }}
-            <p><a href="{{ .Permalink }}">{{ .Title }}</a></p>
-            {{ end }}
-        </div>
+  {{ $list := ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
+  {{ if gt (len $list) 0 }}
+  {{ if .Site.Params.sortTags }}
+  {{ $list = sort $list "Title" }}
+  {{ end }}
+  <div class="site-header-row archive_categories">
+    {{ range $list }}
+    <p><a href="{{ .Permalink }}">{{ .Title }}</a></p>
     {{ end }}
+  </div>
+  {{ end }}
   {{ end }}
 </header>
