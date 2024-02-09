@@ -55,7 +55,7 @@
     },
     {
       "field": "params.showPostCategories",
-      "label": "Show categories of the post?",
+      "label": "Show current post categories?",
       "type": "boolean"
     },
     {
