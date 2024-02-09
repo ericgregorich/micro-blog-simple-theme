@@ -150,7 +150,7 @@ div.archive_categories {
 }
 
 div.archive_categories p {
-  margin: 0 0 10px 0;
+  margin: 0 0 6px 0;
 }
 
 div.archive_categories p a {
@@ -182,7 +182,7 @@ div.archive_categories p a:hover {
   flex-direction: column;
   gap: 25px;
   padding: 0px;
-  margin: 10px 0 0 0;
+  margin: 14px 0 0 0;
 }
 
 .post-list-title {
