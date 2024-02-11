@@ -138,7 +138,7 @@ a.site-nav-link:visited {
 }
 
 a.site-nav-link:hover {
-  color: var(--card-hover-color);
+  color: var(--body-hover-color);
 }
 
 /* ============================== Categories ============================== */

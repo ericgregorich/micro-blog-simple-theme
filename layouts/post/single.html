@@ -83,6 +83,17 @@
 
 	<article class="post-content e-content">
 		{{ .Content }}
+		{{ if .Site.Params.showRelatedPosts }}
+		{{ $related := .Site.RegularPages.Related . | first 5 }}
+		{{ with $related }}
+		<h3>Related</h3>
+		<ul>
+		 {{ range . }}
+		 <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+		 {{ end }}
+		</ul>
+		{{ end }}
+		{{ end }}
 	</article>
 </div>
 {{ if eq .Type "post"}}

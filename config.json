@@ -38,6 +38,7 @@
     "showCategoriesOnCategory": true,
     "showCategoriesOnHomepage": true,
     "showPostCategories": true,
+    "showRelatedPosts": false,
     "show_category_rss": true,
     "showTinylyticsKudos": false,
     "paginate": 20,

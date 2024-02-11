@@ -54,16 +54,21 @@
       "type": "boolean"
     },
     {
-      "field": "params.showPostCategories",
-      "label": "Show current post categories?",
-      "type": "boolean"
-    },
-    {
       "field": "params.sortTags",
       "label": "Sort Categories alphabetically?",
       "type": "boolean"
     },
     {
+      "field": "params.showPostCategories",
+      "label": "Show current post categories?",
+      "type": "boolean"
+    },
+    {
+      "field": "params.showRelatedPosts",
+      "label": "Show related posts?",
+      "type": "boolean"
+    },
+      {
       "field": "params.showTinylyticsKudos",
       "label": "Enable Tinylytics Kudos?",
       "type": "boolean"
