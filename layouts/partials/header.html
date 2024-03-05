@@ -1,7 +1,13 @@
 <header class="site-header">
   <div class="site-header-row">
-    <a class="site-header-logo-link" href="/"><img src="https://family.plumey.com/uploads/2024/family-blog.jpg" class="site-image"
-        alt="{{ .Site.Title }}" /></a>
+    <a class="site-header-logo-link" href="/">
+      {{ if .Site.Params.customblogimage}}
+      <img src="{{ .Site.Params.customblogimage}}" class="site-image"
+        alt="{{ .Site.Title }}" />
+      {{ else }}
+      <img src="{{ .Site.Author.avatar }}" class="site-image"
+      alt="{{ .Site.Title }}" />
+      {{ end }}</a>
   </div>
   <div class="site-header-row">
     <a class="site-header-title-link" href="/">{{ .Site.Title }}</a>
