@@ -98,7 +98,7 @@
 
 {{ end }}
 
-{{ if template.Exists "partials/cusdis.html" }} <h4>Comments:</h4>{{ partial "cusdis.html" . }}{{ end }}
+{{ if templates.Exists "partials/cusdis.html" }} {{ partial "cusdis.html" . }}{{ end }}
 
 {{ end }}
 {{ if .Site.Params.include_conversation }}
