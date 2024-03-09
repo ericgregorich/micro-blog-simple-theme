@@ -5,7 +5,12 @@
   "fields": [
     {
       "field": "params.headertext",
-      "label": "Description to show in your header",
+      "label": "Description to show in your header.",
+      "type": "text"
+    },
+    {
+      "field": "params.customblogimage",
+      "label": "URL to a custom site image.",
       "type": "text"
     },
     {
@@ -92,11 +97,6 @@
       "field": "params.paginate",
       "label": "Number of posts per page",
       "type": "integer"
-    },
-    {
-      "field": "params.customblogimage",
-      "label": "URL to a custom site blog image",
-      "type": "text"
     },
     {
       "field": "params.light_body_background_color",
