@@ -138,7 +138,7 @@ a.site-nav-link:visited {
 }
 
 a.site-nav-link:hover {
-  color: var(--card-hover-color);
+  color: var(--body-hover-color);
 }
 
 /* ============================== Categories ============================== */
@@ -340,6 +340,19 @@ blockquote {
   }
 }
 
+/* ============================== Related Content ============================== */
+.related-content {
+  font-size: var(--font-size-small);
+  margin: 30px;
+}
+
+.related-content a {
+  color: var(--body-accent-color);
+}
+
+.related-content a:hover {
+  color: var(--body-hover-color);
+}
 /* ============================== Site Footer ============================== */
 .site-footer {
   max-width: var(--width-max);
