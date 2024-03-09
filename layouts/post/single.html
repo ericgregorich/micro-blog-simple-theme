@@ -95,7 +95,11 @@
 	{{ if templates.Exists "partials/reply-by-email.html" }}{{ partial "reply-by-email.html" . }}{{ end }}
 	{{ if templates.Exists "partials/reply-on-mastodon.html" }}{{ partial "reply-on-mastodon.html" . }} {{ end }}
 </div>
+
 {{ end }}
+
+{{ if templates.Exists "partials/cusdis.html" }} {{ partial "cusdis.html" . }}{{ end }}
+
 {{ end }}
 {{ if .Site.Params.include_conversation }}
 <script src="https://micro.blog/conversation.js?url={{ .Permalink }}"></script>

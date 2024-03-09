@@ -94,6 +94,11 @@
       "type": "integer"
     },
     {
+      "field": "params.customblogimage",
+      "label": "URL to a custom site blog image",
+      "type": "text"
+    },
+    {
       "field": "params.light_body_background_color",
       "label": "(Light) Body Background",
       "type": "color"
