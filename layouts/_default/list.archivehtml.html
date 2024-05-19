@@ -8,10 +8,20 @@
 {{ end }}
 <div class="archive_categories">
 	{{ range $list }}
-	<p><a href="{{ .Permalink }}">{{ .Title }}</a></p>
+	<p><a href="{{ .Permalink }}">{{ .Title }}</a></p><br>
 	{{ end }}
 </div>
 {{ end }}
+{{ end }}
+
+{{ if templates.Exists "partials/search.html" }}
+<div class="custom-search">
+	{{ partial "search.html" . }}
+	</div>
+	
+	<script>
+	document.getElementById('input_search').focus();
+	</script>
 {{ end }}
 
 	{{ $list := (where .Site.Pages "Type" "post") }}
