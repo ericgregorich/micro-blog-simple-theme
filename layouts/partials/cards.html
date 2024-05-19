@@ -1,37 +1,37 @@
 <style>
     :root {
-    --body-background-color: {{ .Site.Params.light_body_background_color }};
-    --body-text-color: {{ .Site.Params.light_body_text_color }};
-    --body-accent-color: {{ .Site.Params.light_body_accent_color }};
-    --body-hover-color: {{ .Site.Params.light_body_hover_color }};
-    --card-background-color: {{ .Site.Params.light_card_background_color }};
-    --card-text-color: {{ .Site.Params.light_card_text_color }};
-    --card-accent-color: {{ .Site.Params.light_card_accent_color }};
-    --card-hover-color: {{ .Site.Params.light_card_hover_color }};
-    --blockquote: {{ .Site.Params.light_blockquote_color }};
-    --blockquote-border: {{ .Site.Params.light_blockquote_border }};
-    --blockquote-text: {{ .Site.Params.light_blockquote_text }};
-    --shadow-color: {{ .Site.Params.light_shadow_color }};
-    --card-border-color: {{ .Site.Params.light_card_border_color }};
-    --meta-color: {{ .Site.Params.light_meta_color }};
+    --body-background-color: {{ .Site.Params.light_body_background_color | default "#f7f7f7" }};
+    --body-text-color: {{ .Site.Params.light_body_text_color | default "#242424" }};
+    --body-accent-color: {{ .Site.Params.light_body_accent_color | default "#446dad" }};
+    --body-hover-color: {{ .Site.Params.light_body_hover_color | default "#d58400" }};
+    --card-background-color: {{ .Site.Params.light_card_background_color | default "#ffffff" }};
+    --card-text-color: {{ .Site.Params.light_card_text_color | default "#252525" }};
+    --card-accent-color: {{ .Site.Params.light_card_accent_color | default "#446dad" }};
+    --card-hover-color: {{ .Site.Params.light_card_hover_color | default "#d58400"}};
+    --blockquote: {{ .Site.Params.light_blockquote_color | default "#f8eec4"}};
+    --blockquote-border: {{ .Site.Params.light_blockquote_border | default "#d6a32e" }};
+    --blockquote-text: {{ .Site.Params.light_blockquote_text | default "#2a2a2b" }};
+    --shadow-color: {{ .Site.Params.light_shadow_color | default "#a7a5a5"}};
+    --card-border-color: {{ .Site.Params.light_card_border_color | default "#d5d5d5"}};
+    --meta-color: {{ .Site.Params.light_meta_color | default "#848484"}};
   }
   
   @media (prefers-color-scheme: dark) {
   :root {
-    --body-background-color: {{ .Site.Params.dark_body_background_color }};
-    --body-text-color: {{ .Site.Params.dark_body_text_color }};
-    --body-accent-color: {{ .Site.Params.dark_body_accent_color }};
-    --body-hover-color: {{ .Site.Params.dark_body_hover_color }};
-    --card-background-color: {{ .Site.Params.dark_card_background_color }};
-    --card-text-color: {{ .Site.Params.dark_card_text_color }};
-    --card-accent-color: {{ .Site.Params.dark_card_accent_color }};
-    --card-hover-color: {{ .Site.Params.dark_card_hover_color }};
-    --blockquote: {{ .Site.Params.dark_blockquote_color }};
-    --blockquote-border: {{ .Site.Params.dark_blockquote_border }};
-    --blockquote-text: {{ .Site.Params.dark_blockquote_text }};
-    --shadow-color: {{ .Site.Params.dark_shadow_color }};
-    --card-border-color: {{ .Site.Params.dark_card_border_color }};
-    --meta-color: {{ .Site.Params.dark_meta_color }};
+    --body-background-color: {{ .Site.Params.dark_body_background_color | default "#042231" }};
+    --body-text-color: {{ .Site.Params.dark_body_text_color | default "#d2d2d2" }};
+    --body-accent-color: {{ .Site.Params.dark_body_accent_color | default "#16a5d4" }};
+    --body-hover-color: {{ .Site.Params.dark_body_hover_color | default "#e27e2c" }};
+    --card-background-color: {{ .Site.Params.dark_card_background_color | default "#082e41" }};
+    --card-text-color: {{ .Site.Params.dark_card_text_color | default "#d2d2d2" }};
+    --card-accent-color: {{ .Site.Params.dark_card_accent_color | default "#16a5d4" }};
+    --card-hover-color: {{ .Site.Params.dark_card_hover_color | default "#e27e2c" }};
+    --blockquote: {{ .Site.Params.dark_blockquote_color | default "#f8eec4" }};
+    --blockquote-border: {{ .Site.Params.dark_blockquote_border | default "#d6a32e" }};
+    --blockquote-text: {{ .Site.Params.dark_blockquote_text | default "#2a2a2b" }};
+    --shadow-color: {{ .Site.Params.dark_shadow_color | default "#061d28" }};
+    --card-border-color: {{ .Site.Params.dark_card_border_color | default "#105274" }};
+    --meta-color: {{ .Site.Params.dark_meta_color | default "#a2a2a3" }};
   }
 }
 
