@@ -1,15 +1,14 @@
 /** CSS that is configurable through the plugin settings are applied in Cards.html file. */
 :root {
-  --font-family: '__inter_5b82ff', '__inter_Fallback_5b82ff', Inter,
-    ui-sans-serif, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol', 'Noto Color Emoji', system-ui;
-  --font-size-normal: 1.1rem;
-  --font-size-small: 0.9rem;
-  --font-size-large: 1.3rem;
-  --font-size-title: 1.4rem;
-  --width-max: 780px;
-  --width-min: 350px;
-  --width-max-image: 720px;
+  --font-family: Inter var,ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    --font-size-normal: 18px;
+    --font-size-small: 15px;
+    --font-size-large: 22px;
+    --font-size-title: 22px;
+    --width-max: 780px;
+    --width-min: 350px;
+    --width-max-image: 720px;
+    --border-radius: 4px;
 }
 
 /* ============================== Main ============================== */
@@ -330,6 +329,10 @@ blockquote {
   color: var(--card-hover-color);
 }
 
+.microblog_reply_textarea textarea {
+  width: 100%;
+}
+
 @media (max-width: 500px) {
   .response-options {
     flex-direction: column;
@@ -461,4 +464,24 @@ form button {
 .bigfoot-footnote__content {
   background: var(--body-background-color) !important;
   color: var(--body-text-color);
+}
+
+/* ============================== Blogroll ============================== */
+ul.blogroll li {
+  list-style-type: none !important;
+}
+
+ul.blogroll li a {
+  text-decoration: none;
+  color: black;
+}
+
+ul.blogroll li a span {
+  color: gray;
+}
+
+@media (prefers-color-scheme: dark) {
+  ul.blogroll li a {
+    color: white;
+  }
 }
