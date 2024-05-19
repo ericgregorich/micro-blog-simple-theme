@@ -10,8 +10,8 @@
     {{ range $list }}
     <p><a href="{{ .Permalink }}">{{ .Title }}</a></p>
     {{ end }}
-  </div><br><br>
-  {{ end }}
+  </div>
+  {{ end }}<br><br>
     {{ end }}
 
 	{{ if templates.Exists "partials/search.html" }}
