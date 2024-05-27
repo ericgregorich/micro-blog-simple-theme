@@ -59,6 +59,9 @@
 				<time class="post-list-item-date dt-published" datetime="{{ $postDateTimeSys }}">{{ $postDateTime
 					}}</time>
 			</a>
+			{{ with .Params.audio }}
+  				<script type="text/javascript" src="https://micro.blog/narration.js?url={{ . }}"></script>
+			{{ end }}
 		</h1>
 		<div class="post-meta">
 			<img class="u-photo" style="display: none" src="{{ .Site.Author.avatar }}" alt="{{ .Site.Author.name }}" />
