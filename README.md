@@ -21,10 +21,11 @@ Cards is a simple and lightweight theme for Micro.blog.
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/M4M0DLOZR)
 
 ## Support
-If you have any issues, you can either create an issue on [GitHub](https://github.com/ericgregorich/micro-blog-cards-theme/issues), or send me an [email](https://ericgregorich.com/email).
+If you have any issues, you can either create an issue on [GitHub](https://github.com/ericgregorich/micro-blog-cards-theme/issues), or send me an [email](https://ericgregorich.com).
 
 ## Change Log
-For changes to the theme, follow the [Cards Theme Change Log](https://cards.ericgregorich.com/change-log/).
+- 2.0.0 - New social meta tags added to your head HTML. log:title, og:description, og:url fediverse:creator, and themecolor.
+- 2.0.0 - New default theme.
 
 ## Instructions
 Installation, upgrade, troubleshooting, and other details can be found on the [Cards Theme](https://cards.ericgregorich.com) landing page. 
