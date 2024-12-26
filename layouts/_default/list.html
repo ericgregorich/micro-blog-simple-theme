@@ -14,16 +14,6 @@
   {{ end }}<br>
     {{ end }}
 
-	{{ if templates.Exists "partials/search.html" }}
-<div class="custom-search">
-	{{ partial "search.html" . }}
-	</div>
-	
-	<script>
-	document.getElementById('input_search').focus();
-	</script>
-{{ end }}
-
 <div class="post-list-title">
 	<h1>{{ .Title }} {{ if .Site.Params.show_category_rss }}
 		<a href="{{ .Permalink }}feed.xml">
