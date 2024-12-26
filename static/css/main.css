@@ -84,6 +84,7 @@ iframe {
   justify-content: space-between;
   flex-direction: column;
   padding: 10px;
+  font-size: smaller;
 }
 
 .site-header-title-link {
@@ -392,8 +393,17 @@ input[type='text'] {
   border-radius: 5px;
   height: 35px;
   font-size: var(--font-size-normal);
-  margin: 10px;
+  margin: 0px;
   padding: 10px;
+  width: 80%;
+}
+
+@media (max-width: 500px) {
+  input[type='email'], input[type='text'] {
+   margin: 0px;
+     padding: 10px;
+     width: 65%;
+ }
 }
 
 input[id='q'],
@@ -484,4 +494,16 @@ ul.blogroll li a span {
   ul.blogroll li a {
     color: white;
   }
+}
+
+/* ============================== Search Plugin ============================== */
+div#list_results {
+	margin-top: 10px;
+	background-color: var(--card-background-color);
+}
+div#list_results p a {
+	color: var(--card-accent-color);
+}
+div#list_results p a:hover {
+	color: var(--card-hover-color);
 }
