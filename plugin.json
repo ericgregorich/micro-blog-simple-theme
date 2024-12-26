@@ -14,6 +14,11 @@
       "type": "text"
     },
     {
+      "field": "params.fediversecreator",
+      "label": "Fediverse Creator",
+      "type": "text"
+    },
+    {
       "field": "params.showFullPost",
       "label": "Show full post on home? ",
       "type": "boolean"

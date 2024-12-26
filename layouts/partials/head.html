@@ -4,9 +4,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <title>{{ block "title" . }}{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ if .Title }}{{.Title }} - {{ .Site.Title }}{{else}}{{.Summary | truncate 50 }}{{end}}{{ end }}{{ end }}</title>
-
+  <meta name="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ if .Title }}{{.Title }} - {{ .Site.Title }}{{else}}{{.Summary | truncate 50 }}{{end}}{{ end }}{{ end }}"/>
   <meta name="description" content="{{ .Summary | truncate 160 }}" />
-  
+  <meta name="description" content="{{ .Summary | truncate 160 }}" />
+  {{ if .Site.Params.fediversecreator }}
+    <meta name="fediverse:creator" content="{{ .Site.Params.fediversecreator }}"/>
+  {{ end }}
+  <meta name="og:url" content="{{ .Permalink }}" />
+  <meta name="theme-color" content="#ff00ff">
   <link rel="shortcut icon" href="https://micro.blog/{{ .Site.Author.username }}/favicon.png" type="image/x-icon" />
   <link rel="stylesheet" href="{{ "css/main.css" | relURL }}"> 
   {{ partial "cards.html" . }}
