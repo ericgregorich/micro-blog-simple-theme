@@ -5,6 +5,7 @@ Cards is a simple and lightweight theme for Micro.blog.
 - Posts are styled as "Cards,” hence the name of the theme.
 - A wide range of color options. 
 - Optimized for performance, accessibility, and SEO.
+- Optimized for social media using meta tags.
 - Compatible with other plugins.
 - Easily change the theme colors from your plugin settings.
 - Automatic Dark Mode detection.
@@ -18,13 +19,7 @@ Cards is a simple and lightweight theme for Micro.blog.
 
 !["Card Theme Samples"](https://raw.githubusercontent.com/ericgregorich/micro-blog-cards-theme/master/screenshot.png)
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/M4M0DLOZR)
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/ericgregorich)
 
 ## Support
-If you have any issues, you can either create an issue on [GitHub](https://github.com/ericgregorich/micro-blog-cards-theme/issues), or send me an [email](https://ericgregorich.com/email).
-
-## Change Log
-For changes to the theme, follow the [Cards Theme Change Log](https://cards.ericgregorich.com/change-log/).
-
-## Instructions
-Installation, upgrade, troubleshooting, and other details can be found on the [Cards Theme](https://cards.ericgregorich.com) landing page. 
+If you have any issues, you can either create an issue on [GitHub](https://github.com/ericgregorich/micro-blog-cards-theme/issues), or send me an [email](https://ericgregorich.com).

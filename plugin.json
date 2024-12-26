@@ -1,5 +1,5 @@
 {
-  "version": "1.9.7",
+  "version": "1.9.8",
   "title": "Cards Theme",
   "description": "A simple and customizable Micro.blog theme.",
   "fields": [
@@ -11,6 +11,11 @@
     {
       "field": "params.customblogimage",
       "label": "URL to a custom site image.",
+      "type": "text"
+    },
+    {
+      "field": "params.fediversecreator",
+      "label": "Fediverse Creator",
       "type": "text"
     },
     {
